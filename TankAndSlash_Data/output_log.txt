@@ -9,6 +9,8 @@ Direct3D:
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
@@ -17,11 +19,31 @@ Platform assembly: C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Manag
 Loading C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
 Platform assembly: C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\galha\Documents\TankAndSlash\TankAndSlash_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.047 seconds
+- Completed reload, in  0.021 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.960681 ms
+UnloadTime: 1.040396 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.266171 ms
+We're in Brazil
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.136507 ms (FindLiveObjects: 0.027711 ms CreateObjectMapping: 0.010605 ms MarkObjects: 0.073898 ms  DeleteObjects: 0.023264 ms)
+
+DO NOT FORGET TO DELETE BackToMapOnEsc_Temp SCRIPT IN MANAGER!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.272672 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 288.
+Total: 0.185088 ms (FindLiveObjects: 0.026343 ms CreateObjectMapping: 0.013684 ms MarkObjects: 0.087583 ms  DeleteObjects: 0.041739 ms)
+
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1f8 -> priority: 1 
-  Thread -> id: 1a90 -> priority: 1 
+  Thread -> id: ff8 -> priority: 1 
+  Thread -> id: 3a2c -> priority: 1 
