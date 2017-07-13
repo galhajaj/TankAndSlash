@@ -11,3 +11,4 @@ Obj/*
 *.exe
 *.*_data
 *_Data
+*_Data/*
