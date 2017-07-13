@@ -9,5 +9,4 @@ Obj/*
 *.orig
 *.apk
 *.exe
-*.*_data
-TankAndSlash_Data/*
+**_Data/
