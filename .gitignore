@@ -10,5 +10,4 @@ Obj/*
 *.apk
 *.exe
 *.*_data
-*_Data
-*_Data/*
+TankAndSlash_Data/*
