@@ -10,7 +10,8 @@ public class CameraFollow : MonoBehaviour
 	public Vector3 offset;
 	Vector3 targetPos;
 
-	// ================================================================================================ //
+	// This is my comment gal
+    // ================================================================================================ //
 	void Start ()
 	{
 		targetPos = transform.position;
