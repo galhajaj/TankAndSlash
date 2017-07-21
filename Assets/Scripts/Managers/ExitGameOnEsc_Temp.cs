@@ -8,7 +8,7 @@ public class ExitGameOnEsc_Temp : MonoBehaviour
 
 	void Start ()
     {
-		
+
 	}
 	
 	void Update ()

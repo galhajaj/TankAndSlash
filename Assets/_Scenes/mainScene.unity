@@ -281,7 +281,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 244076593}
-        m_MethodName: LoadInitialData
+        m_MethodName: SaveDataToFile
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -345,7 +345,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 244076595}
-  - component: {fileID: 244076594}
   - component: {fileID: 244076593}
   m_Layer: 0
   m_Name: DataManager
@@ -365,17 +364,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dc806d329e98a48bad633c34f6cf36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &244076594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244076592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f45ca09a175167b41b5d6a9a6478513a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  TankParams:
+    MaxHP: 5
+    HP: 2
+    MaxSpeed: 0
 --- !u!4 &244076595
 Transform:
   m_ObjectHideFlags: 0
@@ -839,7 +831,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 244076593}
-        m_MethodName: LoadDataFromFile
+        m_MethodName: LoadDataFromSaveFile
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
