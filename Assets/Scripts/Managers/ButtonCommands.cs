@@ -9,6 +9,11 @@ public class ButtonCommands : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     /*public void SetLevelType(string levelType)
     {
         PlayerPrefs.SetString("LevelType", levelType);

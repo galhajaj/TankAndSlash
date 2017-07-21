@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ExitGameOnEsc_Temp : MonoBehaviour
+public class ExitGameOnEsc : MonoBehaviour
 {
 
 	void Start ()
