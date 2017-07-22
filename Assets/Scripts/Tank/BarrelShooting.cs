@@ -8,7 +8,7 @@ public class BarrelShooting : MonoBehaviour {
 	public GameObject Ammo;
 	public GameObject HighAmmo;
 	public Transform Barrel;
-	public static float directMaxDistance = 20.0f;	//meters
+	public static float directMaxDistance = 12.0f;	//meters
 
 	void Start () {		
 	}
@@ -38,20 +38,6 @@ public class BarrelShooting : MonoBehaviour {
 				shell2.GetComponent<ShellParms> ().m_isHigh = true;
 				shell2.GetComponent<ShellParms> ().explosionDistance = distance;
 				shell2.GetComponent<ShellParms> ().startingPosition = Barrel.position;
-
-
-				//high shooting
-//				GameObject shell3d = (GameObject)Instantiate (HighAmmo, Barrel.position, Barrel.rotation);
-				//
-//				//shell3d.GetComponent<Rigidbody> ().velocity = shell3d.transform.up * ShootingForce;
-//				shell3d.GetComponent<Rigidbody> ().velocity = shell3d.transform.up * ShootingForce;
-//				shell3d.GetComponent<Rigidbody> ().AddForce (Vector3.up * (-10));
-					
-//				shell3d.transform.position.Set(shell3d.transform.position.x,shell3d.transform.position.y ,-5);
-//				Vector3 force = shell3d.transform.forward * ShootingForce;
-//				shell3d.GetComponent<Rigidbody> ().AddForce (force);
-//				shell3d.GetComponent<Rigidbody> ().useGravity = false;//.WakeUp ();//.MovePosition (force);
-				//Destroy (shell3d, 100 / (force.x + force.y));
 			}
 		}
 	}
