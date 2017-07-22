@@ -9,4 +9,4 @@ Obj/*
 *.orig
 *.apk
 *.exe
-**_Data/
+.vs/*
