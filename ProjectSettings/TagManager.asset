@@ -54,3 +54,9 @@ TagManager:
   - name: TankTurret
     uniqueID: 1722567105
     locked: 0
+  - name: SocketsLayer
+    uniqueID: 643395551
+    locked: 0
+  - name: ChipsLayer
+    uniqueID: 2884427179
+    locked: 0
