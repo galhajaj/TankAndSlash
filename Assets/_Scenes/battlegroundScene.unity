@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4623d33d1df51da47b70b0f95dca76ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootingForce: 6
+  ShootingForce: 18
   Ammo: {fileID: 141110, guid: d2e74c6c3f775e24abc7f24b26c291b7, type: 2}
   HighAmmo: {fileID: 141110, guid: d6dbd385326898e4b89fe9b325e554ae, type: 2}
   Barrel: {fileID: 488037200}
@@ -167,8 +167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeScope: {fileID: 2800000, guid: 96ec1b1c029fd9f408273abe7176a028, type: 3}
   farScope: {fileID: 2800000, guid: c55d89248fca4b64194cd491bebaa5fa, type: 3}
-  cursorMode: 1
-  hotSpot: {x: 0, y: 0}
 --- !u!1 &530637170
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,62 +551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09aab2c0e076f4748943a7545d6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  angularSpeed: 10
---- !u!1 &1343781251
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1343781253}
-  - component: {fileID: 1343781252}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1343781252
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343781251}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &1343781253
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343781251}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0464455, y: 1.705188, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625520110
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009845522e0aaf5489103ba242b61253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularVel: 20
+  AngularVel: 120
 --- !u!1 &1777901642
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurretMovement : MonoBehaviour {
 
-	public float AngularVel = 2.0f;
+	public float AngularVel = 120.0f;
 
 	// Use this for initialization
 	void Start () {

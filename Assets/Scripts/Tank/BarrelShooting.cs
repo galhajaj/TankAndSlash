@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BarrelShooting : MonoBehaviour {
 
-	public float ShootingForce = 6.0f;
+	public float ShootingForce = 18.0f;
 	public GameObject Ammo;
 	public GameObject HighAmmo;
 	public Transform Barrel;
@@ -28,16 +28,6 @@ public class BarrelShooting : MonoBehaviour {
 				Vector2 force = shell2.transform.up * ShootingForce;
 				shell2.GetComponent<Rigidbody2D> ().AddForce (force);
 				Destroy (shell2, 100 / (force.x + force.y));
-			} else {
-				GameObject shell2 = (GameObject)Instantiate (Ammo, Barrel.position, Barrel.rotation);
-
-				Vector2 force = shell2.transform.up * ShootingForce;
-				shell2.GetComponent<Rigidbody2D> ().AddForce (force);
-				Destroy (shell2, 10000 / (force.x + force.y));
-
-				shell2.GetComponent<ShellParms> ().m_isHigh = true;
-				shell2.GetComponent<ShellParms> ().explosionDistance = distance;
-				shell2.GetComponent<ShellParms> ().startingPosition = Barrel.position;
 			}
 		}
 	}
