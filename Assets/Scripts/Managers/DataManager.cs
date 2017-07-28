@@ -13,9 +13,9 @@ public class DataManager : MonoBehaviour
     [Serializable] // makes the data tweakable on editor
     public class TankParamsData
     {
-        public int MaxHP;
-        public int HP;
-        public double MaxSpeed;
+        public float MaxLife;
+        public float MaxSpeed;
+        public float LifeRegenerationRate; // 1/sec
     }
 
     public TankParamsData TankParams;

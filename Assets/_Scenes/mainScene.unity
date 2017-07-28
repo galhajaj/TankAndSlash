@@ -338,50 +338,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 155065092}
---- !u!1 &244076592
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 244076595}
-  - component: {fileID: 244076593}
-  m_Layer: 0
-  m_Name: DataManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &244076593
+--- !u!114 &244076593 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244076592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+    type: 2}
+  m_PrefabInternal: {fileID: 1663823527}
   m_Script: {fileID: 11500000, guid: 58dc806d329e98a48bad633c34f6cf36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TankParams:
-    MaxHP: 5
-    HP: 2
-    MaxSpeed: 0
---- !u!4 &244076595
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244076592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9351349, y: -0.60201883, z: 0.80124617}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &550559389
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +913,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1663823527
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.9351349
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.60201883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.80124617
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703163368190784, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.MaxLife
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.MaxSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.LifeRegenerationRate
+      value: 0.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cd45c0baed3230142b651a747db6b694, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1807481565
 GameObject:
   m_ObjectHideFlags: 0
