@@ -173,7 +173,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 701382884}
-  m_PlaneDistance: 0
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -966,6 +966,36 @@ Prefab:
         type: 2}
       propertyPath: TankParams.LifeRegenerationRate
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.Credits
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.ChipCost
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.Life
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.MaxPower
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.Power
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.PowerRegenerationRate
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd45c0baed3230142b651a747db6b694, type: 2}

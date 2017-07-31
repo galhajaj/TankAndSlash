@@ -165,7 +165,37 @@ Prefab:
     - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
         type: 2}
       propertyPath: TankParams.LifeRegenerationRate
-      value: 0.01
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.Life
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.MaxPower
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.Power
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.PowerRegenerationRate
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.ChipCost
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.Credits
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd45c0baed3230142b651a747db6b694, type: 2}
@@ -221,7 +251,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BarUnitObject: {fileID: 1390860200640760, guid: 635717dd47bed5f4891a173792c669d4,
     type: 2}
-  UnitParamsScript: {fileID: 1289457995}
 --- !u!114 &360859241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,6 +531,7 @@ GameObject:
   - component: {fileID: 636753931}
   - component: {fileID: 636753930}
   - component: {fileID: 636753933}
+  - component: {fileID: 636753934}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -556,6 +586,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyTank: {fileID: 148974, guid: 0672378bc30f56f4b94a7e3982b2db4e, type: 2}
+--- !u!114 &636753934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636753929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9b26a50884acb4fbda1a314e25b1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &694308088
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +880,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1289457995}
+      - m_Target: {fileID: 636753934}
         m_MethodName: TakeDamage
         m_Mode: 4
         m_Arguments:
@@ -1217,7 +1258,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1777901646}
-  m_PlaneDistance: 0
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0

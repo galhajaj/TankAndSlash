@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class LifeBarManager : MonoBehaviour
 {
     public GameObject BarUnitObject;
-    public UnitParams UnitParamsScript;
 
     private List<GameObject> _lifeUnitsList = new List<GameObject>();
 
@@ -30,13 +29,13 @@ public class LifeBarManager : MonoBehaviour
     {
         for (int i = 0; i < _lifeUnitsList.Count; ++i)
         {
-            if (Mathf.FloorToInt(UnitParamsScript.Life) > i)
+            if (Mathf.FloorToInt(DataManager.Instance.TankParams.Life) > i)
             {
                 _lifeUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
             }
-            else if (Mathf.FloorToInt(UnitParamsScript.Life) == i)
+            else if (Mathf.FloorToInt(DataManager.Instance.TankParams.Life) == i)
             {
-                float ratio = UnitParamsScript.Life - Mathf.FloorToInt(UnitParamsScript.Life);
+                float ratio = DataManager.Instance.TankParams.Life - Mathf.FloorToInt(DataManager.Instance.TankParams.Life);
                 _lifeUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(ratio, 1.0F, 1.0F);
             }
             else
