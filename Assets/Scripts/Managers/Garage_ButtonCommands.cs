@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GarageButtonCommands : MonoBehaviour
+public class Garage_ButtonCommands : MonoBehaviour
 {
     public GameObject ChipObject;
 
@@ -33,16 +33,9 @@ public class GarageButtonCommands : MonoBehaviour
         DataManager.Instance.SaveDataToFile();
 
         // add new chip
-        Instantiate(ChipObject, chosenFreeTile.position, Quaternion.identity).transform.parent = chosenFreeTile;
-
-        /*GameObject grid = GameObject.Find("SocketsGrid");
-        int rand = Random.Range(0, grid.transform.childCount - 1);
-        Transform randTile = grid.transform.GetChild(rand);
-        Instantiate(ChipObject, randTile.position, Quaternion.identity);*/
-        /*foreach (Transform child in grid.transform)
-        {
-            Instantiate(ChipObject, child.position, Quaternion.identity);
-        }*/
+        GameObject newChip = Instantiate(ChipObject, chosenFreeTile.position, Quaternion.identity);
+        newChip.transform.parent = chosenFreeTile;
+        newChip.GetComponent<Chip>().initRandomType();
     }
 
     void Start ()
