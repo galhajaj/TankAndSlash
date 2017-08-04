@@ -11,13 +11,7 @@ public class PowerBarManager : MonoBehaviour
 
     void Start()
     {
-        // insert bar units
-        for (int i = 0; i < Mathf.RoundToInt(DataManager.Instance.TankParams.MaxPower); ++i)
-        {
-            GameObject powerUnit = Instantiate(BarUnitObject);
-            powerUnit.transform.SetParent(this.transform, false);
-            _powerUnitsList.Add(powerUnit);
-        }
+
     }
 
     void Update()
@@ -27,21 +21,26 @@ public class PowerBarManager : MonoBehaviour
 
     public void UpdateUI()
     {
+        // update bar numbers
+        while (_powerUnitsList.Count <  Mathf.RoundToInt(DataManager.Instance.TankParams.MaxPower))
+        {
+            GameObject powerUnit = Instantiate(BarUnitObject);
+            powerUnit.transform.SetParent(this.transform, false);
+            _powerUnitsList.Add(powerUnit);
+        }
+
+        // fill bars
         for (int i = 0; i < _powerUnitsList.Count; ++i)
         {
+            float ratio = 0.0F;
+
             if (Mathf.FloorToInt(DataManager.Instance.TankParams.Power) > i)
-            {
-                _powerUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
-            }
+                ratio = 1.0F;
             else if (Mathf.FloorToInt(DataManager.Instance.TankParams.Power) == i)
-            {
-                float ratio = DataManager.Instance.TankParams.Power - Mathf.FloorToInt(DataManager.Instance.TankParams.Power);
-                _powerUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(ratio, 1.0F, 1.0F);
-            }
-            else
-            {
-                _powerUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(0.0F, 1.0F, 1.0F);
-            }
+                ratio = DataManager.Instance.TankParams.Power - Mathf.FloorToInt(DataManager.Instance.TankParams.Power);
+
+            _powerUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(ratio, 1.0F, 1.0F);
+
         }
     }
 }
