@@ -21,8 +21,6 @@ public class DataManager : MonoBehaviour
         public float Power;
         public float PowerRegenerationRate; // 1/sec
         public float MaxSpeed;
-
-        public int ChipCost;
     }
 
     public TankParamsData TankParams;
