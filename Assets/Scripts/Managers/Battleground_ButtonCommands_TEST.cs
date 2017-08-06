@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattlegroundButtonCommands_TEST : MonoBehaviour
+public class Battleground_ButtonCommands_TEST : MonoBehaviour
 {
 
 	void Start ()

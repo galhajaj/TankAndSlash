@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - MapSector
+  - InventorySocketTag
+  - TurretSocketTag
+  - SkillSocketTag
   layers:
   - Default
   - TransparentFX
@@ -15,8 +18,8 @@ TagManager:
   - 
   - 
   - TankLayer
-  - 
-  - 
+  - ChipsLayer
+  - SocketsLayer
   - 
   - 
   - 
@@ -48,18 +51,18 @@ TagManager:
   - name: GroundUnitsSortingLayer
     uniqueID: 1212310387
     locked: 0
-  - name: TankBody
+  - name: TankBodySortingLayer
     uniqueID: 1920058067
     locked: 0
-  - name: TankTurret
+  - name: TankTurretSortingLayer
     uniqueID: 1722567105
     locked: 0
-  - name: SocketsLayer
+  - name: SocketsSortingLayer
     uniqueID: 643395551
     locked: 0
-  - name: ChipsLayer
+  - name: ChipsSortingLayer
     uniqueID: 2884427179
     locked: 0
-  - name: UILayer
+  - name: UISortingLayer
     uniqueID: 3643217125
     locked: 0
