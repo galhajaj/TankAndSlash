@@ -997,6 +997,16 @@ Prefab:
       propertyPath: TankParams.PowerRegenerationRate
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.Speed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
+        type: 2}
+      propertyPath: TankParams.AngularVelocity
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd45c0baed3230142b651a747db6b694, type: 2}
   m_IsPrefabParent: 0

@@ -23,10 +23,6 @@ public class DataManager : MonoBehaviour
         public float MaxSpeed;
         public float Speed;
         public float AngularVelocity;
-
-        public int ChipCost;
-
-        public GameObject Cannon;
     }
 
     public TankParamsData TankParams;
