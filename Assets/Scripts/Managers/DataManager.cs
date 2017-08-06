@@ -21,8 +21,12 @@ public class DataManager : MonoBehaviour
         public float Power;
         public float PowerRegenerationRate; // 1/sec
         public float MaxSpeed;
+        public float Speed;
+        public float AngularVelocity;
 
         public int ChipCost;
+
+        public GameObject Cannon;
     }
 
     public TankParamsData TankParams;

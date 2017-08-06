@@ -22,7 +22,7 @@ public class Scopes : MonoBehaviour {
 		Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
 		float distance = Mathf.Sqrt (Mathf.Pow (worldPos.x - m_transform.position.x, 2) + Mathf.Pow (worldPos.y - m_transform.position.y, 2));
 
-		if (distance < BarrelShooting.directMaxDistance) {
+		if (distance < CannonShooting.directMaxDistance) {
 			setCurser (closeScope);
 		} else {
 			setCurser (farScope);
