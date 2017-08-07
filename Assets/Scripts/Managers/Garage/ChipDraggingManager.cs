@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Garage_DraggingManager : MonoBehaviour
+public class ChipDraggingManager : MonoBehaviour
 {
     private GameObject _draggedObject = null;
     private GameObject _originSocketObject = null;
@@ -77,13 +77,12 @@ public class Garage_DraggingManager : MonoBehaviour
                     // if target socket contains chip, move it to the origin socket of dragged chip (switch places)
                     if (targetSocketCollider.transform.childCount > 0)
                     {
-                        targetSocketCollider.transform.GetChild(0).position = _originSocketObject.transform.position;
-                        targetSocketCollider.transform.GetChild(0).SetParent(_originSocketObject.transform);
+                        GameObject containedChip = targetSocketCollider.transform.GetChild(0).gameObject;
+                        ChipManager.Instance.MoveChip(containedChip, _originSocketObject.transform);
                     }
 
                     // place chip in target socket
-                    _draggedObject.transform.position = targetSocketCollider.transform.position;
-                    _draggedObject.transform.SetParent(targetSocketCollider.transform);
+                    ChipManager.Instance.MoveChip(_draggedObject, targetSocketCollider.transform);
                 }
                 else // if leave drag not on socket - back to origin socket
                 {

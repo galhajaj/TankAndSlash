@@ -23,6 +23,9 @@ public class DataManager : MonoBehaviour
         public float MaxSpeed;
         public float Speed;
         public float AngularVelocity;
+
+        public int ChipsRunningNumber;
+        public List<ChipData> Chips = new List<ChipData>();
     }
 
     public TankParamsData TankParams;
@@ -52,6 +55,13 @@ public class DataManager : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+    // =========================================================================================== //
+    public int GetNextChipID()
+    {
+        int id = TankParams.ChipsRunningNumber;
+        TankParams.ChipsRunningNumber++;
+        return id;
     }
     // =========================================================================================== //
     // in continue game, load from save file of the current player

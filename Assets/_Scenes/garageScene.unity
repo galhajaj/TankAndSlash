@@ -912,6 +912,8 @@ GameObject:
   - component: {fileID: 1342501131}
   - component: {fileID: 1342501132}
   - component: {fileID: 1342501133}
+  - component: {fileID: 1342501134}
+  - component: {fileID: 1342501135}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -954,13 +956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1b69da7bad6e54d8e0050ef9ed716f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChipObject: {fileID: 1725054789902128, guid: 4042b09c6c99e32499da38ed51d3a0a4, type: 2}
-  RegularPackCost: 100
-  PremiumPackCost: 250
-  SuperPackCost: 500
-  RegularPackButton: {fileID: 1194104954}
-  PremiumPackButton: {fileID: 1881421202}
-  SuperPackButton: {fileID: 1245047251}
 --- !u!114 &1342501132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +977,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d7107633f71081438a92949b7ad5682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1342501134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342501128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0d5ca95115f2f4a9019c233bfbab64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChipObject: {fileID: 1725054789902128, guid: 4042b09c6c99e32499da38ed51d3a0a4, type: 2}
+  ChipsNumberInPack: 5
+  RegularPackCost: 100
+  PremiumPackCost: 250
+  SuperPackCost: 500
+--- !u!114 &1342501135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342501128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b379a11342a19419dc49945fda1410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1422956508
@@ -1501,7 +1523,7 @@ Prefab:
     - target: {fileID: 224091617123156286, guid: 912706055c763c340b20266fb4f67402,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224091617123156286, guid: 912706055c763c340b20266fb4f67402,
         type: 2}
@@ -1601,7 +1623,7 @@ Prefab:
     - target: {fileID: 224865709483202466, guid: 28cdab3cd890c80459c4ffdbcfe0b4e3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224865709483202466, guid: 28cdab3cd890c80459c4ffdbcfe0b4e3,
         type: 2}
