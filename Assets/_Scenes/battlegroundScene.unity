@@ -400,7 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dffd4c83631dbc4f9a11a082eb2fc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyTank: {fileID: 148974, guid: 0672378bc30f56f4b94a7e3982b2db4e, type: 2}
+  EnemyObject: {fileID: 1740937395872536, guid: 489a7cd54cb503e4f82c2dee92f7aaaf,
+    type: 2}
 --- !u!114 &636753934
 MonoBehaviour:
   m_ObjectHideFlags: 0

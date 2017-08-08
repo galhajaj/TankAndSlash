@@ -27,6 +27,7 @@ public class DataManager : MonoBehaviour
         public int ChipCost;
 
         public GameObject Cannon;
+        public string DefaultCannon;
     }
 
     public TankParamsData TankParams;

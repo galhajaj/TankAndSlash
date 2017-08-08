@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class EnemiesManager : MonoBehaviour {
 
-	public GameObject EnemyTank;
+	public GameObject EnemyObject;
 
 	private float timeToGenerate = 0f;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		timeToGenerate -= Time.deltaTime;
 		if (timeToGenerate > 0) {
 			return;
 		}
 
-		float posX = Random.Range (0, 10);
-		float posY = Random.Range (0, 10);
+		float posX = Random.Range (0, 100);
+		float posY = Random.Range (0, 100);
 
-		GameObject eneTank = (GameObject)Instantiate (EnemyTank, new Vector2 (posX, posY), new Quaternion ());
+        GameObject enemy = (GameObject)Instantiate (EnemyObject, new Vector2 (posX, posY), new Quaternion ());
 		timeToGenerate = Random.Range (3, 5);
 	}
 }
-		
