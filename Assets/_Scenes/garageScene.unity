@@ -990,6 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0d5ca95115f2f4a9019c233bfbab64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Chips: []
   ChipObject: {fileID: 1725054789902128, guid: 4042b09c6c99e32499da38ed51d3a0a4, type: 2}
   ChipsNumberInPack: 5
   RegularPackCost: 100

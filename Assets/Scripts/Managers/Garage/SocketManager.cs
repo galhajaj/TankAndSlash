@@ -6,6 +6,10 @@ public class SocketManager : MonoBehaviour
 {
     public static SocketManager Instance;
 
+    public const string INVENTORY_GRID_NAME = "Grid_Inventory";
+    public const string SKILLS_GRID_NAME    = "Grid_Skills";
+    public const string TURRETS_GRID_NAME   = "Grid_Turrets";
+
     private GameObject _inventoryGrid;
     private GameObject _skillsGrid;
     private GameObject _turretsGrid;
@@ -17,15 +21,26 @@ public class SocketManager : MonoBehaviour
 
     void Start ()
     {
-		_inventoryGrid  = GameObject.Find("Grid_Inventory");
-        _skillsGrid     = GameObject.Find("Grid_Skills");
-        _turretsGrid    = GameObject.Find("Grid_Turrets");
+		_inventoryGrid  = GameObject.Find(INVENTORY_GRID_NAME);
+        _skillsGrid     = GameObject.Find(SKILLS_GRID_NAME);
+        _turretsGrid    = GameObject.Find(TURRETS_GRID_NAME);
     }
 	
 	void Update ()
     {
 		
 	}
+
+    /*public GameObject GetGridByName(string name)
+    {
+        if (name == INVENTORY_GRID_NAME)
+            return _inventoryGrid;
+        if (name == SKILLS_GRID_NAME)
+            return _skillsGrid;
+        if (name == TURRETS_GRID_NAME)
+            return _turretsGrid;
+        return null;
+    }*/
 
     public List<Transform> GetFreeSocketsForChipsPack()
     {

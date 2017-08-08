@@ -13,6 +13,8 @@ public class ChipManager : MonoBehaviour
         SUPER
     }
 
+    public List<GameObject> Chips = new List<GameObject>();
+
     public GameObject ChipObject;
     public int ChipsNumberInPack = 5;
     public int RegularPackCost = 100;
@@ -26,8 +28,8 @@ public class ChipManager : MonoBehaviour
 
     void Start ()
     {
-		
-	}
+        fillChipsListFromDataManager();
+    }
 	
 	void Update ()
     {
@@ -73,9 +75,6 @@ public class ChipManager : MonoBehaviour
         Chip chipScript = chip.GetComponent<Chip>();
         chipScript.SocketName = socket.name;
         chipScript.GridName = socket.parent.name;
-
-        // save
-        DataManager.Instance.SaveDataToFile();
     }
 
     private void createRandomChip(Transform socket)
@@ -89,7 +88,54 @@ public class ChipManager : MonoBehaviour
         chipScript.ChipName = "TempName";
         chipScript.ChipID = DataManager.Instance.GetNextChipID();
 
-        DataManager.Instance.TankParams.Chips.Add(chipScript.GetChipData());
+        Chips.Add(newChip);
+
+        // update chips data
+        UpdateChipsDataInDataManager();
+    }
+
+    private void createChipByData(ChipData chipData)
+    {
+        // create
+        GameObject newChip = Instantiate(ChipObject);
+
+        // get chips socket
+        GameObject grid = GameObject.Find(chipData.GridName);
+        if (grid == null)
+            Debug.LogWarning("Grid not exist yet!");
+        Transform socket = grid.transform.Find(chipData.SocketName);
+        if (socket == null)
+            Debug.LogWarning("Socket not exist yet!");
+
+        MoveChip(newChip, socket);
+
+        Chip chipScript = newChip.GetComponent<Chip>();
+        chipScript.ChipID = chipData.ChipID;
+        chipScript.ChipName = chipData.ChipName;
+        chipScript.Type = chipData.ChipType;
+
+        Chips.Add(newChip);
+    }
+
+    private void fillChipsListFromDataManager()
+    {
+        foreach (ChipData chipData in DataManager.Instance.TankParams.ChipsData)
+        {
+            createChipByData(chipData);
+        }
+    }
+
+    public void UpdateChipsDataInDataManager()
+    {
+        // clear current data
+        DataManager.Instance.TankParams.ChipsData.Clear();
+
+        // renew
+        foreach (GameObject chip in Chips)
+        {
+            ChipData chipData = chip.GetComponent<Chip>().GetChipData();
+            DataManager.Instance.TankParams.ChipsData.Add(chipData);
+        }
 
         // save
         DataManager.Instance.SaveDataToFile();

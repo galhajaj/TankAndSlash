@@ -25,7 +25,7 @@ public class DataManager : MonoBehaviour
         public float AngularVelocity;
 
         public int ChipsRunningNumber;
-        public List<ChipData> Chips = new List<ChipData>();
+        public List<ChipData> ChipsData = new List<ChipData>();
     }
 
     public TankParamsData TankParams;

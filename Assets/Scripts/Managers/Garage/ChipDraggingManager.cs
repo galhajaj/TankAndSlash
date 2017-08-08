@@ -83,6 +83,9 @@ public class ChipDraggingManager : MonoBehaviour
 
                     // place chip in target socket
                     ChipManager.Instance.MoveChip(_draggedObject, targetSocketCollider.transform);
+
+                    // update chips data
+                    ChipManager.Instance.UpdateChipsDataInDataManager();
                 }
                 else // if leave drag not on socket - back to origin socket
                 {
