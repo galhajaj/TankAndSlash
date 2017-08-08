@@ -10,3 +10,4 @@ Obj/*
 *.apk
 *.exe
 .vs/*
+Assets/Scripts/Managers/DataManager.cs

@@ -1,6 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
+public class ChipData
+{
+    public int ChipID;
+    public Chip.ChipType ChipType;
+    public string ChipName;
+    public string GridName;
+    public string SocketName;
+}
 
 public class Chip : MonoBehaviour
 {
@@ -23,7 +34,12 @@ public class Chip : MonoBehaviour
         }
     }
 
-	void Start ()
+    public int ChipID;
+    public string ChipName;
+    public string GridName; // in which grid contained - inventory/turrets/skills
+    public string SocketName; // the socket name inside grid
+
+    void Start ()
     {
 		
 	}
@@ -33,9 +49,21 @@ public class Chip : MonoBehaviour
 		
 	}
 
-    public void initRandomType()
+    public ChipData GetChipData()
     {
-        int rand = Random.Range(0, 4);
+        ChipData data = new ChipData();
+        data.ChipID = this.ChipID;
+        data.ChipType = this.Type;
+        data.ChipName = this.ChipName;
+        data.GridName = this.GridName;
+        data.SocketName = this.SocketName;
+        return data;
+    }
+
+    public void init()
+    {
+        // set random type
+        int rand = UnityEngine.Random.Range(0, 4);
         if (rand == 0)
             Type = Chip.ChipType.TURRET;
         else if (rand == 1)
@@ -44,6 +72,8 @@ public class Chip : MonoBehaviour
             Type = Chip.ChipType.STATE;
         else if (rand == 3)
             Type = Chip.ChipType.CONSUMABLE;
+
+        // set grid & socket names
     }
 
     public void setRandomSubType()
