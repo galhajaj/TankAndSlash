@@ -65,7 +65,7 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.A))
         {
-            _rigidBody.transform.Rotate(Vector3.forward * DataManager.Instance.TankParams.AngularVelocity);
+            _rigidBody.AddTorque(DataManager.Instance.TankParams.AngularVelocity);
         }
     }
 
@@ -73,13 +73,14 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.D))
         {
-            _rigidBody.transform.Rotate((-1) * Vector3.forward * DataManager.Instance.TankParams.AngularVelocity);
+            //_rigidBody.transform.Rotate((-1) * Vector3.forward * DataManager.Instance.TankParams.AngularVelocity);
+            _rigidBody.AddTorque(-DataManager.Instance.TankParams.AngularVelocity);
         }
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        _rigidBody.freezeRotation = true;
+        //_rigidBody.freezeRotation = true;
     }
 
 }

@@ -205,7 +205,7 @@ Prefab:
     - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
         type: 2}
       propertyPath: TankParams.AngularVelocity
-      value: 3
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 114351172847787418, guid: cd45c0baed3230142b651a747db6b694,
         type: 2}
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dffd4c83631dbc4f9a11a082eb2fc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyObject: {fileID: 1740937395872536, guid: 489a7cd54cb503e4f82c2dee92f7aaaf,
+  EnemyObject: {fileID: 1349724071272818, guid: 489a7cd54cb503e4f82c2dee92f7aaaf,
     type: 2}
 --- !u!114 &636753934
 MonoBehaviour:
@@ -544,6 +544,7 @@ GameObject:
   - component: {fileID: 883166129}
   - component: {fileID: 883166128}
   - component: {fileID: 883166131}
+  - component: {fileID: 883166132}
   m_Layer: 8
   m_Name: Spaceship
   m_TagString: Untagged
@@ -635,7 +636,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 10
   m_LinearDrag: 3
-  m_AngularDrag: 0.05
+  m_AngularDrag: 200
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -654,6 +655,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannon: {fileID: 1888465736013554, guid: aa782241161aa944ea0d97816aae1fda, type: 2}
+--- !u!114 &883166132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883166126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c418a94eee42c6348b8958f8a7eb2852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &944786378
 GameObject:
   m_ObjectHideFlags: 0

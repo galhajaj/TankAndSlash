@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour {
     private float _angularVel;
     private float _shootingInterval;    //seconds
     private float _timeToNextShot;
+    private Rigidbody2D _rigidbody;
 
     public float ShootingForce = 50.0f;
     public GameObject Ammo;
@@ -20,6 +21,8 @@ public class EnemyMovement : MonoBehaviour {
         _angularVel = 30;
         _shootingInterval = 2;
         _timeToNextShot = _shootingInterval;
+
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 	
 	// Update is called once per frame
@@ -55,6 +58,31 @@ public class EnemyMovement : MonoBehaviour {
         float angle = Mathf.Atan2 (transform.position.x - _blueTank.position.x, transform.position.y - _blueTank.position.y) * Mathf.Rad2Deg;
 
         Quaternion rotateTo = Quaternion.AngleAxis(-angle, Vector3.forward);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotateTo, step);
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, rotateTo, step);
+
+
+
+        //###########################################
+        Vector3 dir = _blueTank.position - transform.position;
+        Vector2 fwdDir = -transform.up;
+        float angDiff = Vector2.Angle(dir,fwdDir);
+        Vector3 cross = Vector3.Cross(fwdDir,dir);
+        if(cross.z > 0)
+        {
+            angDiff = 360 - angDiff;
+        }
+        if(angDiff > 1f)
+        {
+            _rigidbody.AddTorque(angDiff < 180f ? -speed/20:speed/20);
+        }
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<ShellBehavior>())
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

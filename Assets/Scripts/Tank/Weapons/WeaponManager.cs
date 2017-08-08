@@ -11,7 +11,8 @@ public class WeaponManager : MonoBehaviour
     void Start ()
     {
         //GameObject cannon = (GameObject)Instantiate(UnityEngine.Resources.Load(DataManager.Instance.TankParams.DefaultCannon), transform.position, transform.rotation);
-        GameObject cannon = GameObject.Instantiate(DataManager.Instance.TankParams.Cannon, transform.position, transform.rotation) as GameObject;
+
+        GameObject cannon = GameObject.Instantiate(Cannon, transform.position, transform.rotation);
         cannon.transform.parent = this.transform;
 	}
 	
