@@ -22,7 +22,7 @@ public class LifeBarManager : MonoBehaviour
     public void UpdateUI()
     {
         // update bar numbers
-        while (_lifeUnitsList.Count < Mathf.RoundToInt(DataManager.Instance.TankParams.MaxLife))
+        while (_lifeUnitsList.Count < DataManager.Instance.TankParams.MaxLife)
         {
             GameObject lifeUnit = Instantiate(BarUnitObject);
             lifeUnit.transform.SetParent(this.transform, false);

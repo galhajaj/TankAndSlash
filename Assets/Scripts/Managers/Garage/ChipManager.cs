@@ -28,6 +28,7 @@ public class ChipManager : MonoBehaviour
 
     void Start ()
     {
+        //Application.isLoadingLevel
         fillChipsListFromDataManager();
     }
 	

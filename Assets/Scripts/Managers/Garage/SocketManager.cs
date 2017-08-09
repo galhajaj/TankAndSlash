@@ -11,8 +11,11 @@ public class SocketManager : MonoBehaviour
     public const string TURRETS_GRID_NAME   = "Grid_Turrets";
 
     private GameObject _inventoryGrid;
+    public GameObject InventoryGrid { get { return _inventoryGrid; } }
     private GameObject _skillsGrid;
+    public GameObject SkillsGrid { get { return _skillsGrid; } }
     private GameObject _turretsGrid;
+    public GameObject TurretsGrid { get { return _turretsGrid; } }
 
     void Awake()
     {
@@ -30,17 +33,6 @@ public class SocketManager : MonoBehaviour
     {
 		
 	}
-
-    /*public GameObject GetGridByName(string name)
-    {
-        if (name == INVENTORY_GRID_NAME)
-            return _inventoryGrid;
-        if (name == SKILLS_GRID_NAME)
-            return _skillsGrid;
-        if (name == TURRETS_GRID_NAME)
-            return _turretsGrid;
-        return null;
-    }*/
 
     public List<Transform> GetFreeSocketsForChipsPack()
     {

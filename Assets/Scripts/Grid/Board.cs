@@ -10,10 +10,15 @@ public class Board : MonoBehaviour
 	public Transform TilePrefab;
 
     public List<Transform> Tiles = new List<Transform>();
-	// ======================================================================================================================================== //
-	void Start () 
+    // ======================================================================================================================================== //
+    void Awake()
+    {
+        generateTiles();
+    }
+    // ======================================================================================================================================== //
+    void Start() 
 	{
-		generateTiles();
+
 	}
 	// ======================================================================================================================================== //
 	private void generateTiles()
@@ -29,7 +34,7 @@ public class Board : MonoBehaviour
 			{
 				Vector3 tilePosition = new Vector3(boardOriginX + (x * tileWidth), boardOriginY + (y * tileHeight), 0);
 				Transform tile = (Transform)Instantiate(TilePrefab, tilePosition, Quaternion.identity);
-				tile.name = "Tile" + x + y;
+				tile.name = "Tile" + x + "_" + y;
 				tile.parent = this.transform;
 
 				tile.GetComponent<Tile>().PosX = x;

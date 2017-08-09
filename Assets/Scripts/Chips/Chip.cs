@@ -23,7 +23,7 @@ public class Chip : MonoBehaviour
         CONSUMABLE
     }
 
-    public ChipType _type;
+    private ChipType _type;
     public ChipType Type
     {
         get { return _type; }

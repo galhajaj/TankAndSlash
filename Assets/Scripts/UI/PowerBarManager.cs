@@ -22,7 +22,7 @@ public class PowerBarManager : MonoBehaviour
     public void UpdateUI()
     {
         // update bar numbers
-        while (_powerUnitsList.Count <  Mathf.RoundToInt(DataManager.Instance.TankParams.MaxPower))
+        while (_powerUnitsList.Count <  DataManager.Instance.TankParams.MaxPower)
         {
             GameObject powerUnit = Instantiate(BarUnitObject);
             powerUnit.transform.SetParent(this.transform, false);
