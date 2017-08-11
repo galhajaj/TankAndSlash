@@ -13,7 +13,7 @@ public class ChipData
     public string SocketName;
 }
 
-public class Chip : MonoBehaviour
+public abstract class Chip : MonoBehaviour
 {
     public enum ChipType
     {
@@ -101,4 +101,7 @@ public class Chip : MonoBehaviour
                 break;
         }
     }
+
+    public virtual void Install() { DataManager.Instance.SaveDataToFile(); }
+    public virtual void Uninstall() { DataManager.Instance.SaveDataToFile(); }
 }

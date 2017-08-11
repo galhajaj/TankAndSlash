@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4504372735403488}
   - component: {fileID: 212479614227825588}
-  - component: {fileID: 114120132147867694}
   - component: {fileID: 61048280589858860}
   m_Layer: 9
   m_Name: Chip
@@ -67,18 +66,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
---- !u!114 &114120132147867694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725054789902128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e63039c626d93e4e95f3a8bf33a6d90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _type: 0
 --- !u!212 &212479614227825588
 SpriteRenderer:
   m_ObjectHideFlags: 1

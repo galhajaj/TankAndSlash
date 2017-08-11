@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -81,12 +82,18 @@ public class ChipManager : MonoBehaviour
     private void createRandomChip(Transform socket)
     {
         GameObject newChip = Instantiate(ChipObject);
+
+        UnityEngine.Object[] allChips = Resources.LoadAll("ChipScripts/Const");
+        int randomChipNumber = UnityEngine.Random.Range(0, allChips.Length);
+        string chipName = allChips[randomChipNumber].name;
+
+        Chip chipScript = newChip.AddComponent(Type.GetType(chipName)) as Chip;
+
         MoveChip(newChip, socket);
 
-        Chip chipScript = newChip.GetComponent<Chip>();
         chipScript.init(); // TODO: add chances by the packType
 
-        chipScript.ChipName = "TempName";
+        chipScript.ChipName = chipName;
         chipScript.ChipID = DataManager.Instance.GetNextChipID();
 
         Chips.Add(newChip);
@@ -102,15 +109,10 @@ public class ChipManager : MonoBehaviour
 
         // get chips socket
         GameObject grid = GameObject.Find(chipData.GridName);
-        if (grid == null)
-            Debug.LogWarning("Grid not exist yet!");
         Transform socket = grid.transform.Find(chipData.SocketName);
-        if (socket == null)
-            Debug.LogWarning("Socket not exist yet!");
 
+        Chip chipScript = newChip.AddComponent(Type.GetType(chipData.ChipName)) as Chip;
         MoveChip(newChip, socket);
-
-        Chip chipScript = newChip.GetComponent<Chip>();
         chipScript.ChipID = chipData.ChipID;
         chipScript.ChipName = chipData.ChipName;
         chipScript.Type = chipData.ChipType;
