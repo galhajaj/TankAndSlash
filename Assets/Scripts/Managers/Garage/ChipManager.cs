@@ -69,7 +69,7 @@ public class ChipManager : MonoBehaviour
             createRandomChip(freeSockets[i]);
     }
 
-    public void MoveChip(GameObject chip, Transform socket)
+    public void InstallChip(GameObject chip, Transform socket)
     {
         chip.transform.position = socket.position;
         chip.transform.parent = socket;
@@ -77,6 +77,17 @@ public class ChipManager : MonoBehaviour
         Chip chipScript = chip.GetComponent<Chip>();
         chipScript.SocketName = socket.name;
         chipScript.GridName = socket.parent.name;
+
+        if (chipScript.GridName != "Grid_Inventory")
+            chipScript.Install();
+    }
+
+    public void UninstallChip(GameObject chip, Transform socket)
+    {
+        Chip chipScript = chip.GetComponent<Chip>();
+
+        if (chipScript.GridName != "Grid_Inventory")
+            chipScript.Uninstall();
     }
 
     private void createRandomChip(Transform socket)
@@ -89,7 +100,7 @@ public class ChipManager : MonoBehaviour
 
         Chip chipScript = newChip.AddComponent(Type.GetType(chipName)) as Chip;
 
-        MoveChip(newChip, socket);
+        InstallChip(newChip, socket);
 
         chipScript.init(); // TODO: add chances by the packType
 
@@ -112,7 +123,7 @@ public class ChipManager : MonoBehaviour
         Transform socket = grid.transform.Find(chipData.SocketName);
 
         Chip chipScript = newChip.AddComponent(Type.GetType(chipData.ChipName)) as Chip;
-        MoveChip(newChip, socket);
+        InstallChip(newChip, socket);
         chipScript.ChipID = chipData.ChipID;
         chipScript.ChipName = chipData.ChipName;
         chipScript.Type = chipData.ChipType;

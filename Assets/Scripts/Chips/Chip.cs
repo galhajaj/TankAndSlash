@@ -104,4 +104,6 @@ public abstract class Chip : MonoBehaviour
 
     public virtual void Install() { DataManager.Instance.SaveDataToFile(); }
     public virtual void Uninstall() { DataManager.Instance.SaveDataToFile(); }
+    public virtual void Activate() { }
+    public virtual void Deactivate() { }
 }

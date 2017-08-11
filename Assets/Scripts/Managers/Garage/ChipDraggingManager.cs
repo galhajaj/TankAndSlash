@@ -78,11 +78,11 @@ public class ChipDraggingManager : MonoBehaviour
                     if (targetSocketCollider.transform.childCount > 0)
                     {
                         GameObject containedChip = targetSocketCollider.transform.GetChild(0).gameObject;
-                        ChipManager.Instance.MoveChip(containedChip, _originSocketObject.transform);
+                        ChipManager.Instance.InstallChip(containedChip, _originSocketObject.transform);
                     }
 
                     // place chip in target socket
-                    ChipManager.Instance.MoveChip(_draggedObject, targetSocketCollider.transform);
+                    ChipManager.Instance.InstallChip(_draggedObject, targetSocketCollider.transform);
 
                     // update chips data
                     ChipManager.Instance.UpdateChipsDataInDataManager();
