@@ -10,25 +10,26 @@ public class DataManager : MonoBehaviour
     private const string CURRENT_PLAYER = "Player1"; // temp...hard coded in the meantime. get it from text somehow
     private const string SAVE_FILE_PATH = @"c:\temp\MyTest.txt"; // change location and name to be for the current player
 
-    [Serializable] // makes the data tweakable on editor
-    public class TankParamsData
-    {
-        public int Credits;
-        public int MaxLife;
-        public float Life;
-        public float LifeRegenerationRate; // 1/sec
-        public int MaxPower;
-        public float Power;
-        public float PowerRegenerationRate; // 1/sec
-        public float MaxSpeed;
-        public float Speed;
-        public float AngularVelocity;
+    // need to add default values to save time & trouble
+    public int MaxLife = 5;
+    public float Life = 3;
+    public float LifeRegenerationRate = 0.05F; // 1/sec
+    public int MaxPower = 3;
+    public float Power = 1;
+    public float PowerRegenerationRate = 0.02F; // 1/sec
+    public float MaxSpeed = 300.0F;
+    public float Speed = 300.0F;
+    public float AngularVelocity = 300.0F;
 
-        public int ChipsRunningNumber;
+    [Serializable] // makes the data tweakable on editor
+    public class SavedData
+    {
+        public int Credits = 1000;
+        public int ChipsRunningNumber = 0;
         public List<ChipData> ChipsData = new List<ChipData>();
     }
 
-    public TankParamsData TankParams;
+    public SavedData Saved;
     // can add here more structs...
 
     // =========================================================================================== //
@@ -59,8 +60,8 @@ public class DataManager : MonoBehaviour
     // =========================================================================================== //
     public int GetNextChipID()
     {
-        int id = TankParams.ChipsRunningNumber;
-        TankParams.ChipsRunningNumber++;
+        int id = Saved.ChipsRunningNumber;
+        Saved.ChipsRunningNumber++;
         return id;
     }
     // =========================================================================================== //
@@ -69,7 +70,7 @@ public class DataManager : MonoBehaviour
     {
         Debug.Log("load game - load from save file");
 
-        TankParams = Utils.ReadFromBinaryFile<TankParamsData>(SAVE_FILE_PATH);
+        Saved = Utils.ReadFromBinaryFile<SavedData>(SAVE_FILE_PATH);
     }
     // =========================================================================================== //
     // create/update the current player save file
@@ -77,7 +78,7 @@ public class DataManager : MonoBehaviour
     {
         Debug.Log("save data to file");
 
-        Utils.WriteToBinaryFile<TankParamsData>(SAVE_FILE_PATH, TankParams);
+        Utils.WriteToBinaryFile<SavedData>(SAVE_FILE_PATH, Saved);
     }
     // =========================================================================================== //
 }

@@ -22,7 +22,7 @@ public class PowerBarManager : MonoBehaviour
     public void UpdateUI()
     {
         // update bar numbers
-        while (_powerUnitsList.Count <  DataManager.Instance.TankParams.MaxPower)
+        while (_powerUnitsList.Count <  DataManager.Instance.MaxPower)
         {
             GameObject powerUnit = Instantiate(BarUnitObject);
             powerUnit.transform.SetParent(this.transform, false);
@@ -34,10 +34,10 @@ public class PowerBarManager : MonoBehaviour
         {
             float ratio = 0.0F;
 
-            if (Mathf.FloorToInt(DataManager.Instance.TankParams.Power) > i)
+            if (Mathf.FloorToInt(DataManager.Instance.Power) > i)
                 ratio = 1.0F;
-            else if (Mathf.FloorToInt(DataManager.Instance.TankParams.Power) == i)
-                ratio = DataManager.Instance.TankParams.Power - Mathf.FloorToInt(DataManager.Instance.TankParams.Power);
+            else if (Mathf.FloorToInt(DataManager.Instance.Power) == i)
+                ratio = DataManager.Instance.Power - Mathf.FloorToInt(DataManager.Instance.Power);
 
             _powerUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(ratio, 1.0F, 1.0F);
 

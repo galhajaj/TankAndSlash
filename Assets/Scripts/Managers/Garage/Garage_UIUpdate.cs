@@ -14,6 +14,6 @@ public class Garage_UIUpdate : MonoBehaviour
 	
 	void Update ()
     {
-        CreditsText.text = "Credits: " + DataManager.Instance.TankParams.Credits.ToString();
+        CreditsText.text = "Credits: " + DataManager.Instance.Saved.Credits.ToString();
     }
 }

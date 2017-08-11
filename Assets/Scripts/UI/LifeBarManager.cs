@@ -22,7 +22,7 @@ public class LifeBarManager : MonoBehaviour
     public void UpdateUI()
     {
         // update bar numbers
-        while (_lifeUnitsList.Count < DataManager.Instance.TankParams.MaxLife)
+        while (_lifeUnitsList.Count < DataManager.Instance.MaxLife)
         {
             GameObject lifeUnit = Instantiate(BarUnitObject);
             lifeUnit.transform.SetParent(this.transform, false);
@@ -34,10 +34,10 @@ public class LifeBarManager : MonoBehaviour
         {
             float ratio = 0.0F;
 
-            if (Mathf.FloorToInt(DataManager.Instance.TankParams.Life) > i)
+            if (Mathf.FloorToInt(DataManager.Instance.Life) > i)
                 ratio = 1.0F;
-            else if (Mathf.FloorToInt(DataManager.Instance.TankParams.Life) == i)
-                ratio = DataManager.Instance.TankParams.Life - Mathf.FloorToInt(DataManager.Instance.TankParams.Life);
+            else if (Mathf.FloorToInt(DataManager.Instance.Life) == i)
+                ratio = DataManager.Instance.Life - Mathf.FloorToInt(DataManager.Instance.Life);
 
             _lifeUnitsList[i].transform.Find("Fill").transform.localScale = new Vector3(ratio, 1.0F, 1.0F);
         }

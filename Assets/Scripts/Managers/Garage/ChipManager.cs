@@ -53,7 +53,7 @@ public class ChipManager : MonoBehaviour
     {
         // check if can afford
         int cost = getCost(packType);
-        if (DataManager.Instance.TankParams.Credits < cost)
+        if (DataManager.Instance.Saved.Credits < cost)
             return;
 
         // check free sockets
@@ -62,7 +62,7 @@ public class ChipManager : MonoBehaviour
             return;
 
         // pay
-        DataManager.Instance.TankParams.Credits -= cost;
+        DataManager.Instance.Saved.Credits -= cost;
 
         // add chips
         for (int i = 0; i < freeSockets.Count; ++i)
@@ -122,7 +122,7 @@ public class ChipManager : MonoBehaviour
 
     private void fillChipsListFromDataManager()
     {
-        foreach (ChipData chipData in DataManager.Instance.TankParams.ChipsData)
+        foreach (ChipData chipData in DataManager.Instance.Saved.ChipsData)
         {
             createChipByData(chipData);
         }
@@ -131,13 +131,13 @@ public class ChipManager : MonoBehaviour
     public void UpdateChipsDataInDataManager()
     {
         // clear current data
-        DataManager.Instance.TankParams.ChipsData.Clear();
+        DataManager.Instance.Saved.ChipsData.Clear();
 
         // renew
         foreach (GameObject chip in Chips)
         {
             ChipData chipData = chip.GetComponent<Chip>().GetChipData();
-            DataManager.Instance.TankParams.ChipsData.Add(chipData);
+            DataManager.Instance.Saved.ChipsData.Add(chipData);
         }
 
         // save

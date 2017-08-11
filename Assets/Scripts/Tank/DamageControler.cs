@@ -18,7 +18,7 @@ public class DamageControler : MonoBehaviour {
     {
         if (other.gameObject.GetComponent<ShellBehavior>())
         {
-            DataManager.Instance.TankParams.Life -= 0.5f;
+            DataManager.Instance.Life -= 0.5f;
         }
     }
 }
