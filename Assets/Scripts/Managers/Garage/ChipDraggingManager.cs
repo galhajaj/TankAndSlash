@@ -30,6 +30,7 @@ public class ChipDraggingManager : MonoBehaviour
             {
                 _draggedObject = hit.collider.gameObject;
                 _originSocketObject = _draggedObject.transform.parent.gameObject;
+                ChipManager.Instance.UninstallChip(_draggedObject);
             }
         }
     }
@@ -78,6 +79,7 @@ public class ChipDraggingManager : MonoBehaviour
                     if (targetSocketCollider.transform.childCount > 0)
                     {
                         GameObject containedChip = targetSocketCollider.transform.GetChild(0).gameObject;
+                        ChipManager.Instance.UninstallChip(containedChip);
                         ChipManager.Instance.InstallChip(containedChip, _originSocketObject.transform);
                     }
 

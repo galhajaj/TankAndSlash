@@ -14,8 +14,13 @@ public class ButtonCommands : MonoBehaviour
         Application.Quit();
     }
 
-    /*public void SetLevelType(string levelType)
+    public void SaveGame()
     {
-        PlayerPrefs.SetString("LevelType", levelType);
-    }*/
+        DataManager.Instance.SaveDataToFile();
+    }
+
+    public void LoadGame()
+    {
+        DataManager.Instance.LoadDataFromSaveFile();
+    }
 }

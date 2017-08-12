@@ -38,12 +38,6 @@ public class DataManager : MonoBehaviour
 
     void Awake()
     {
-        MakeThisTheOnlyGameManager();
-    }
-
-
-    void MakeThisTheOnlyGameManager()
-    {
         if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -57,6 +51,7 @@ public class DataManager : MonoBehaviour
             }
         }
     }
+
     // =========================================================================================== //
     public int GetNextChipID()
     {

@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        _blueTank = GameObject.Find("Spaceship").GetComponent<Rigidbody2D>().transform;
+        _blueTank = Tank.Instance.transform;
         //Do we want enemy parms in the DataManager as well?   _angularVel = DataManager.Instance.
         _angularVel = 30;
         _shootingInterval = 2;

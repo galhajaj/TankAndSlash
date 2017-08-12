@@ -82,7 +82,7 @@ public class ChipManager : MonoBehaviour
             chipScript.Install();
     }
 
-    public void UninstallChip(GameObject chip, Transform socket)
+    public void UninstallChip(GameObject chip)
     {
         Chip chipScript = chip.GetComponent<Chip>();
 

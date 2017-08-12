@@ -28,6 +28,13 @@ public class PowerBarManager : MonoBehaviour
             powerUnit.transform.SetParent(this.transform, false);
             _powerUnitsList.Add(powerUnit);
         }
+        while (_powerUnitsList.Count > DataManager.Instance.MaxLife)
+        {
+            GameObject powerUnit = _powerUnitsList[_powerUnitsList.Count - 1];
+            powerUnit.transform.SetParent(null);
+            _powerUnitsList.Remove(powerUnit);
+            DestroyImmediate(powerUnit);
+        }
 
         // fill bars
         for (int i = 0; i < _powerUnitsList.Count; ++i)

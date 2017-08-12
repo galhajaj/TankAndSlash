@@ -28,6 +28,13 @@ public class LifeBarManager : MonoBehaviour
             lifeUnit.transform.SetParent(this.transform, false);
             _lifeUnitsList.Add(lifeUnit);
         }
+        while (_lifeUnitsList.Count > DataManager.Instance.MaxLife)
+        {
+            GameObject lifeUnit = _lifeUnitsList[_lifeUnitsList.Count - 1];
+            lifeUnit.transform.SetParent(null);
+            _lifeUnitsList.Remove(lifeUnit);
+            DestroyImmediate(lifeUnit);
+        }
 
         // fill bars
         for (int i = 0; i < _lifeUnitsList.Count; ++i)
