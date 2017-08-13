@@ -62,7 +62,26 @@ public class DataManager : MonoBehaviour
     {
         Debug.Log("save data to file");
 
+        // update chips data
+        Saved.ChipsData.Clear();
+        fillChipsDataFromGrid(Inventory.Instance.InventoryGrid);
+        fillChipsDataFromGrid(Inventory.Instance.TurretsGrid);
+        fillChipsDataFromGrid(Inventory.Instance.SkillsGrid);
+
         Utils.WriteToBinaryFile<SavedData>(SAVE_FILE_PATH, Saved);
+    }
+    // =========================================================================================== //
+    private void fillChipsDataFromGrid(GameObject grid)
+    {
+        foreach (Transform tile in grid.transform)
+        {
+            if (tile.childCount > 0)
+            {
+                Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
+                ChipData chipData = chipScript.GetChipData();
+                Saved.ChipsData.Add(chipData);
+            }
+        }
     }
     // =========================================================================================== //
 }

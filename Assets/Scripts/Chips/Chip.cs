@@ -102,12 +102,10 @@ public abstract class Chip : MonoBehaviour
     public virtual void Install()
     {
         Debug.Log("Install chip...");
-        DataManager.Instance.SaveDataToFile();
     }
     public virtual void Uninstall()
     {
         Debug.Log("Uninstall chip...");
-        DataManager.Instance.SaveDataToFile();
     }
     public virtual void Activate()
     {

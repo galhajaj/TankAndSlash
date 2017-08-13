@@ -30,8 +30,6 @@ public class Inventory : MonoBehaviour
         SUPER
     }
 
-    public List<GameObject> Chips = new List<GameObject>();
-
     public GameObject ChipObject;
     public int ChipsNumberInPack = 5;
     public int RegularPackCost = 100;
@@ -90,6 +88,9 @@ public class Inventory : MonoBehaviour
         // add chips
         for (int i = 0; i < freeSockets.Count; ++i)
             createRandomChip(freeSockets[i]);
+
+        // save to file
+        DataManager.Instance.SaveDataToFile();
     }
 
     public void PutOnChip(GameObject chip, Transform socket)
@@ -168,11 +169,6 @@ public class Inventory : MonoBehaviour
 
         chipScript.ChipName = chipName;
         chipScript.ChipID = DataManager.Instance.GetNextChipID();
-
-        Chips.Add(newChip);
-
-        // update chips data
-        UpdateChipsDataInDataManager();
     }
 
     private void createChipByData(ChipData chipData)
@@ -189,8 +185,6 @@ public class Inventory : MonoBehaviour
         chipScript.ChipID = chipData.ChipID;
         chipScript.ChipName = chipData.ChipName;
         chipScript.Type = chipData.ChipType;
-
-        Chips.Add(newChip);
     }
 
     public void FillChipsListFromDataManager()
@@ -199,22 +193,6 @@ public class Inventory : MonoBehaviour
         {
             createChipByData(chipData);
         }
-    }
-
-    public void UpdateChipsDataInDataManager()
-    {
-        // clear current data
-        DataManager.Instance.Saved.ChipsData.Clear();
-
-        // renew
-        foreach (GameObject chip in Chips)
-        {
-            ChipData chipData = chip.GetComponent<Chip>().GetChipData();
-            DataManager.Instance.Saved.ChipsData.Add(chipData);
-        }
-
-        // save
-        DataManager.Instance.SaveDataToFile();
     }
 
     private List<Transform> getFreeSocketsForChipsPack()

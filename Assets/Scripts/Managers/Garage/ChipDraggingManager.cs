@@ -31,6 +31,9 @@ public class ChipDraggingManager : MonoBehaviour
                 _draggedObject = hit.collider.gameObject;
                 _originSocketObject = _draggedObject.transform.parent.gameObject;
                 Inventory.Instance.PutOffChip(_draggedObject);
+
+                // save to file
+                DataManager.Instance.SaveDataToFile();
             }
         }
     }
@@ -86,8 +89,8 @@ public class ChipDraggingManager : MonoBehaviour
                     // place chip in target socket
                     Inventory.Instance.PutOnChip(_draggedObject, targetSocketCollider.transform);
 
-                    // update chips data
-                    Inventory.Instance.UpdateChipsDataInDataManager();
+                    // save to file
+                    DataManager.Instance.SaveDataToFile();
                 }
                 else // if leave drag not on socket - back to origin socket
                 {
