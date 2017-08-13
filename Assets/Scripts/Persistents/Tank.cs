@@ -6,6 +6,8 @@ public class Tank : MonoBehaviour
 {
     public static Tank Instance;
 
+    private GameObject _currentCannon = null;
+
     // need to add default values to save time & trouble
     public int MaxLife = 5;
     public float Life = 3;
@@ -42,4 +44,17 @@ public class Tank : MonoBehaviour
     {
 		
 	}
+
+    public void InstallTurret(string name)
+    {
+        GameObject cannon = Resources.Load("Turrets/" + name) as GameObject;
+        _currentCannon = Instantiate(cannon, transform.position, transform.rotation);
+        _currentCannon.transform.parent = this.transform;
+    }
+
+    public void UninstallTurret()
+    {
+        _currentCannon.transform.parent = null;
+        DestroyImmediate(_currentCannon.gameObject);
+    }
 }

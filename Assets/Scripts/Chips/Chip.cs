@@ -60,7 +60,7 @@ public abstract class Chip : MonoBehaviour
         return data;
     }
 
-    public void init()
+    /*public void init()
     {
         // set random type
         int rand = UnityEngine.Random.Range(0, 4);
@@ -74,7 +74,7 @@ public abstract class Chip : MonoBehaviour
             Type = Chip.ChipType.CONSUMABLE;
 
         // set grid & socket names
-    }
+    }*/
 
     public void setRandomSubType()
     {

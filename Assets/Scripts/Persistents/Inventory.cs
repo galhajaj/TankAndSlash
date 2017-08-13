@@ -92,7 +92,7 @@ public class Inventory : MonoBehaviour
             createRandomChip(freeSockets[i]);
     }
 
-    public void InstallChip(GameObject chip, Transform socket)
+    public void PutOnChip(GameObject chip, Transform socket)
     {
         chip.transform.position = socket.position;
         chip.transform.parent = socket;
@@ -105,7 +105,7 @@ public class Inventory : MonoBehaviour
             chipScript.Install();
     }
 
-    public void UninstallChip(GameObject chip)
+    public void PutOffChip(GameObject chip)
     {
         Chip chipScript = chip.GetComponent<Chip>();
 
@@ -117,15 +117,30 @@ public class Inventory : MonoBehaviour
     {
         GameObject newChip = Instantiate(ChipObject);
 
-        UnityEngine.Object[] allChips = Resources.LoadAll("ChipScripts/Const");
+        int randomChipType = UnityEngine.Random.Range(0, 2);
+
+        string resourcesFolder = "";
+        Chip.ChipType chipType;
+        if (randomChipType == 0) // const chip
+        {
+            resourcesFolder = "Const";
+            chipType = Chip.ChipType.CONST;
+        }
+        else// if (randomChipType == 1) // turret chip
+        {
+            resourcesFolder = "Turret";
+            chipType = Chip.ChipType.TURRET;
+        }
+
+        UnityEngine.Object[] allChips = Resources.LoadAll("ChipScripts/" + resourcesFolder);
         int randomChipNumber = UnityEngine.Random.Range(0, allChips.Length);
         string chipName = allChips[randomChipNumber].name;
 
         Chip chipScript = newChip.AddComponent(Type.GetType(chipName)) as Chip;
 
-        InstallChip(newChip, socket);
+        PutOnChip(newChip, socket);
 
-        chipScript.init(); // TODO: add chances by the packType
+        chipScript.Type = chipType;
 
         chipScript.ChipName = chipName;
         chipScript.ChipID = DataManager.Instance.GetNextChipID();
@@ -146,7 +161,7 @@ public class Inventory : MonoBehaviour
         Transform socket = grid.transform.Find(chipData.SocketName);
 
         Chip chipScript = newChip.AddComponent(Type.GetType(chipData.ChipName)) as Chip;
-        InstallChip(newChip, socket);
+        PutOnChip(newChip, socket);
         chipScript.ChipID = chipData.ChipID;
         chipScript.ChipName = chipData.ChipName;
         chipScript.Type = chipData.ChipType;
