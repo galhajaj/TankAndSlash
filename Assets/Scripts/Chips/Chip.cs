@@ -11,6 +11,7 @@ public class ChipData
     public string ChipName;
     public string GridName;
     public string SocketName;
+    public bool IsActive;
 }
 
 public abstract class Chip : MonoBehaviour
@@ -38,6 +39,7 @@ public abstract class Chip : MonoBehaviour
     public string ChipName;
     public string GridName; // in which grid contained - inventory/turrets/skills
     public string SocketName; // the socket name inside grid
+    public bool IsActive;
 
     void Start ()
     {
@@ -58,27 +60,6 @@ public abstract class Chip : MonoBehaviour
         data.GridName = this.GridName;
         data.SocketName = this.SocketName;
         return data;
-    }
-
-    /*public void init()
-    {
-        // set random type
-        int rand = UnityEngine.Random.Range(0, 4);
-        if (rand == 0)
-            Type = Chip.ChipType.TURRET;
-        else if (rand == 1)
-            Type = Chip.ChipType.CONST;
-        else if (rand == 2)
-            Type = Chip.ChipType.STATE;
-        else if (rand == 3)
-            Type = Chip.ChipType.CONSUMABLE;
-
-        // set grid & socket names
-    }*/
-
-    public void setRandomSubType()
-    {
-        // from config files... TODO
     }
 
     private void changeColor()
@@ -112,6 +93,14 @@ public abstract class Chip : MonoBehaviour
         Debug.Log("Uninstall chip...");
         DataManager.Instance.SaveDataToFile();
     }
-    public virtual void Activate() { }
-    public virtual void Deactivate() { }
+    public virtual void Activate()
+    {
+        Debug.Log("Activate chip...");
+        IsActive = true;
+    }
+    public virtual void Deactivate()
+    {
+        Debug.Log("Deactivate chip...");
+        IsActive = false;
+    }
 }

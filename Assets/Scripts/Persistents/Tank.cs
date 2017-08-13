@@ -45,15 +45,17 @@ public class Tank : MonoBehaviour
 		
 	}
 
-    public void InstallTurret(string name)
+    public void PutOnTurret(string name)
     {
         GameObject cannon = Resources.Load("Turrets/" + name) as GameObject;
         _currentCannon = Instantiate(cannon, transform.position, transform.rotation);
         _currentCannon.transform.parent = this.transform;
     }
 
-    public void UninstallTurret()
+    public void PutOffTurret()
     {
+        if (_currentCannon == null)
+            return;
         _currentCannon.transform.parent = null;
         DestroyImmediate(_currentCannon.gameObject);
     }

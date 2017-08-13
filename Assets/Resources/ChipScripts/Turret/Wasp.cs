@@ -6,13 +6,23 @@ public class Wasp : Chip
 {
     public override void Install()
     {
-        Tank.Instance.InstallTurret("Cannon3");
         base.Install();
     }
 
     public override void Uninstall()
     {
-        Tank.Instance.UninstallTurret();
         base.Uninstall();
+    }
+
+    public override void Activate()
+    {
+        Tank.Instance.PutOnTurret("Cannon3");
+        base.Activate();
+    }
+
+    public override void Deactivate()
+    {
+        Tank.Instance.PutOffTurret();
+        base.Deactivate();
     }
 }

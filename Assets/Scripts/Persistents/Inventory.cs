@@ -80,7 +80,7 @@ public class Inventory : MonoBehaviour
             return;
 
         // check free sockets
-        List<Transform> freeSockets = _getFreeSocketsForChipsPack();
+        List<Transform> freeSockets = getFreeSocketsForChipsPack();
         if (freeSockets == null)
             return;
 
@@ -102,7 +102,14 @@ public class Inventory : MonoBehaviour
         chipScript.GridName = socket.parent.name;
 
         if (chipScript.GridName != "Grid_Inventory")
+        {
             chipScript.Install();
+            if (chipScript.GridName == "Grid_Turrets")
+            {
+                deactivateActiveTurret();
+                chipScript.Activate();
+            }
+        }
     }
 
     public void PutOffChip(GameObject chip)
@@ -110,7 +117,14 @@ public class Inventory : MonoBehaviour
         Chip chipScript = chip.GetComponent<Chip>();
 
         if (chipScript.GridName != "Grid_Inventory")
+        {
             chipScript.Uninstall();
+            if (chipScript.GridName == "Grid_Turrets" && chipScript.IsActive)
+            {
+                chipScript.Deactivate();
+                activateNextTurret(chipScript.ChipID);
+            }
+        }
     }
 
     private void createRandomChip(Transform socket)
@@ -193,7 +207,7 @@ public class Inventory : MonoBehaviour
         DataManager.Instance.SaveDataToFile();
     }
 
-    private List<Transform> _getFreeSocketsForChipsPack()
+    private List<Transform> getFreeSocketsForChipsPack()
     {
         List<Transform> freeSockets = new List<Transform>();
 
@@ -208,5 +222,34 @@ public class Inventory : MonoBehaviour
         }
 
         return null;
+    }
+
+    private void deactivateActiveTurret()
+    {
+        foreach (Transform tile in _turretsGrid.transform)
+        {
+            if (tile.childCount > 0)
+            {
+                Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
+                if (chipScript.IsActive)
+                    chipScript.Deactivate();
+            }
+        }
+    }
+
+    private void activateNextTurret(int removedChipId)
+    {
+        foreach (Transform tile in _turretsGrid.transform)
+        {
+            if (tile.childCount > 0)
+            {
+                Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
+                if (chipScript.ChipID != removedChipId)
+                {
+                    chipScript.Activate();
+                    return;
+                }
+            }
+        }
     }
 }
