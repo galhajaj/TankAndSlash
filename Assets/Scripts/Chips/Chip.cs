@@ -21,7 +21,8 @@ public abstract class Chip : MonoBehaviour
         TURRET,
         CONST,
         STATE,
-        CONSUMABLE
+        CONSUMABLE,
+        NONE
     }
 
     private ChipType _type;
@@ -111,6 +112,10 @@ public abstract class Chip : MonoBehaviour
     public virtual void Activate()
     {
         Debug.Log("Activate chip...");
+        if (Type == ChipType.CONSUMABLE)
+        {
+            // destroy it
+        }
         IsActive = true;
     }
     public virtual void Deactivate()

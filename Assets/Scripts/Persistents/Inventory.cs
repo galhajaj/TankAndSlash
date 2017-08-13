@@ -131,19 +131,29 @@ public class Inventory : MonoBehaviour
     {
         GameObject newChip = Instantiate(ChipObject);
 
-        int randomChipType = UnityEngine.Random.Range(0, 2);
+        int randomChipType = UnityEngine.Random.Range(0, 4);
 
         string resourcesFolder = "";
-        Chip.ChipType chipType;
+        Chip.ChipType chipType = Chip.ChipType.NONE;
         if (randomChipType == 0) // const chip
         {
             resourcesFolder = "Const";
             chipType = Chip.ChipType.CONST;
         }
-        else// if (randomChipType == 1) // turret chip
+        else if (randomChipType == 1) // turret chip
         {
             resourcesFolder = "Turret";
             chipType = Chip.ChipType.TURRET;
+        }
+        else if (randomChipType == 2) // consumable chip
+        {
+            resourcesFolder = "Consumable";
+            chipType = Chip.ChipType.CONSUMABLE;
+        }
+        else if (randomChipType == 3) // state chip
+        {
+            resourcesFolder = "State";
+            chipType = Chip.ChipType.STATE;
         }
 
         UnityEngine.Object[] allChips = Resources.LoadAll("ChipScripts/" + resourcesFolder);
