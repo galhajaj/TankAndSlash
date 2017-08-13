@@ -10,17 +10,6 @@ public class DataManager : MonoBehaviour
     private const string CURRENT_PLAYER = "Player1"; // temp...hard coded in the meantime. get it from text somehow
     private const string SAVE_FILE_PATH = @"c:\temp\MyTest.txt"; // change location and name to be for the current player
 
-    // need to add default values to save time & trouble
-    public int MaxLife = 5;
-    public float Life = 3;
-    public float LifeRegenerationRate = 0.05F; // 1/sec
-    public int MaxPower = 3;
-    public float Power = 1;
-    public float PowerRegenerationRate = 0.02F; // 1/sec
-    public float MaxSpeed = 300.0F;
-    public float Speed = 300.0F;
-    public float AngularVelocity = 300.0F;
-
     [Serializable] // makes the data tweakable on editor
     public class SavedData
     {

@@ -17,16 +17,16 @@ public class Garage_ButtonCommands : MonoBehaviour
 
     public void BuyRegularPack()
     {
-        ChipManager.Instance.BuyPack(ChipManager.PackType.REGULAR);
+        Inventory.Instance.BuyPack(Inventory.PackType.REGULAR);
     }
 
     public void BuyPremiumPack()
     {
-        ChipManager.Instance.BuyPack(ChipManager.PackType.PREMIUM);
+        Inventory.Instance.BuyPack(Inventory.PackType.PREMIUM);
     }
 
     public void BuySuperPack()
     {
-        ChipManager.Instance.BuyPack(ChipManager.PackType.SUPER);
+        Inventory.Instance.BuyPack(Inventory.PackType.SUPER);
     }
 }

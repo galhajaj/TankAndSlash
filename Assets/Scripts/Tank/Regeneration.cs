@@ -17,20 +17,20 @@ public class Regeneration : MonoBehaviour
 
     private void lifeRegeneration()
     {
-        int maxLifeToRegenerateTo = Mathf.CeilToInt(DataManager.Instance.Life);
+        int maxLifeToRegenerateTo = Mathf.CeilToInt(Tank.Instance.Life);
 
-        if (Mathf.FloorToInt(DataManager.Instance.Life) < maxLifeToRegenerateTo)
-            DataManager.Instance.Life += Time.deltaTime * DataManager.Instance.LifeRegenerationRate;
+        if (Mathf.FloorToInt(Tank.Instance.Life) < maxLifeToRegenerateTo)
+            Tank.Instance.Life += Time.deltaTime * Tank.Instance.LifeRegenerationRate;
 
-        if (DataManager.Instance.Life > maxLifeToRegenerateTo)
-            DataManager.Instance.Life = maxLifeToRegenerateTo;
+        if (Tank.Instance.Life > maxLifeToRegenerateTo)
+            Tank.Instance.Life = maxLifeToRegenerateTo;
     }
 
     private void powerRegeneration()
     {
-        if (DataManager.Instance.Power < DataManager.Instance.MaxPower)
-            DataManager.Instance.Power += Time.deltaTime * DataManager.Instance.PowerRegenerationRate;
+        if (Tank.Instance.Power < Tank.Instance.MaxPower)
+            Tank.Instance.Power += Time.deltaTime * Tank.Instance.PowerRegenerationRate;
         else
-            DataManager.Instance.Power = DataManager.Instance.MaxPower;
+            Tank.Instance.Power = Tank.Instance.MaxPower;
     }
 }

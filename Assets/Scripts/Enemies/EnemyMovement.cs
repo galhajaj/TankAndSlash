@@ -17,7 +17,7 @@ public class EnemyMovement : MonoBehaviour {
     void Start ()
     {
         _blueTank = Tank.Instance.transform;
-        //Do we want enemy parms in the DataManager as well?   _angularVel = DataManager.Instance.
+        //Do we want enemy parms in the DataManager as well?   _angularVel = Tank.Instance.
         _angularVel = 30;
         _shootingInterval = 2;
         _timeToNextShot = _shootingInterval;

@@ -33,7 +33,7 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.W))
         {
-            _rigidBody.AddForce(_rigidBody.transform.up * DataManager.Instance.Speed);
+            _rigidBody.AddForce(_rigidBody.transform.up * Tank.Instance.Speed);
         }
     }
         
@@ -41,7 +41,7 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.S))
         {
-            _rigidBody.AddForce(_rigidBody.transform.up * (-1) * DataManager.Instance.Speed / 2);
+            _rigidBody.AddForce(_rigidBody.transform.up * (-1) * Tank.Instance.Speed / 2);
         }
     }
 
@@ -49,7 +49,7 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.E))
         {
-            _rigidBody.AddForce(_rigidBody.transform.right * DataManager.Instance.Speed);
+            _rigidBody.AddForce(_rigidBody.transform.right * Tank.Instance.Speed);
         }
     }
 
@@ -57,7 +57,7 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.Q))
         {
-            _rigidBody.AddForce(_rigidBody.transform.right * (-1) * DataManager.Instance.Speed);
+            _rigidBody.AddForce(_rigidBody.transform.right * (-1) * Tank.Instance.Speed);
         }
     }
 
@@ -65,7 +65,7 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.A))
         {
-            _rigidBody.AddTorque(DataManager.Instance.AngularVelocity);
+            _rigidBody.AddTorque(Tank.Instance.AngularVelocity);
         }
     }
 
@@ -73,8 +73,8 @@ public class SpaceshipMovement : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.D))
         {
-            //_rigidBody.transform.Rotate((-1) * Vector3.forward * DataManager.Instance.TankParams.AngularVelocity);
-            _rigidBody.AddTorque(-DataManager.Instance.AngularVelocity);
+            //_rigidBody.transform.Rotate((-1) * Vector3.forward * Tank.Instance.TankParams.AngularVelocity);
+            _rigidBody.AddTorque(-Tank.Instance.AngularVelocity);
         }
     }
 

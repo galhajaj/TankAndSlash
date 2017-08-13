@@ -30,7 +30,7 @@ public class ChipDraggingManager : MonoBehaviour
             {
                 _draggedObject = hit.collider.gameObject;
                 _originSocketObject = _draggedObject.transform.parent.gameObject;
-                ChipManager.Instance.UninstallChip(_draggedObject);
+                Inventory.Instance.UninstallChip(_draggedObject);
             }
         }
     }
@@ -79,15 +79,15 @@ public class ChipDraggingManager : MonoBehaviour
                     if (targetSocketCollider.transform.childCount > 0)
                     {
                         GameObject containedChip = targetSocketCollider.transform.GetChild(0).gameObject;
-                        ChipManager.Instance.UninstallChip(containedChip);
-                        ChipManager.Instance.InstallChip(containedChip, _originSocketObject.transform);
+                        Inventory.Instance.UninstallChip(containedChip);
+                        Inventory.Instance.InstallChip(containedChip, _originSocketObject.transform);
                     }
 
                     // place chip in target socket
-                    ChipManager.Instance.InstallChip(_draggedObject, targetSocketCollider.transform);
+                    Inventory.Instance.InstallChip(_draggedObject, targetSocketCollider.transform);
 
                     // update chips data
-                    ChipManager.Instance.UpdateChipsDataInDataManager();
+                    Inventory.Instance.UpdateChipsDataInDataManager();
                 }
                 else // if leave drag not on socket - back to origin socket
                 {
