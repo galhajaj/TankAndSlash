@@ -54,8 +54,6 @@ public class Inventory : MonoBehaviour
         _inventoryGrid = GameObject.Find(INVENTORY_GRID_NAME);
         _skillsGrid = GameObject.Find(SKILLS_GRID_NAME);
         _turretsGrid = GameObject.Find(TURRETS_GRID_NAME);
-
-        fillChipsListFromDataManager();
     }
 
     void Update()
@@ -156,7 +154,7 @@ public class Inventory : MonoBehaviour
         Chips.Add(newChip);
     }
 
-    private void fillChipsListFromDataManager()
+    public void FillChipsListFromDataManager()
     {
         foreach (ChipData chipData in DataManager.Instance.Saved.ChipsData)
         {

@@ -22,5 +22,6 @@ public class ButtonCommands : MonoBehaviour
     public void LoadGame()
     {
         DataManager.Instance.LoadDataFromSaveFile();
+        Inventory.Instance.FillChipsListFromDataManager();
     }
 }

@@ -51,8 +51,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4254203310660814}
-  - component: {fileID: 114780605567359542}
-  - component: {fileID: 114262803820645626}
+  - component: {fileID: 114690772442737504}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -146,17 +145,6 @@ MonoBehaviour:
   BoardSizeY: 1
   TilePrefab: {fileID: 4393528565020578, guid: cf509fe6089dde043bcb6a324fbfec0a, type: 2}
   Tiles: []
---- !u!114 &114262803820645626
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1785583352754808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b379a11342a19419dc49945fda1410, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114676171461360386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,6 +160,23 @@ MonoBehaviour:
   BoardSizeY: 5
   TilePrefab: {fileID: 4766648438976178, guid: 75f2ef0e92a4c4948bcd726bd67e8524, type: 2}
   Tiles: []
+--- !u!114 &114690772442737504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785583352754808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec218a6c03dd604492ea4a820295154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Chips: []
+  ChipObject: {fileID: 1725054789902128, guid: 4042b09c6c99e32499da38ed51d3a0a4, type: 2}
+  ChipsNumberInPack: 5
+  RegularPackCost: 100
+  PremiumPackCost: 250
+  SuperPackCost: 500
 --- !u!114 &114698955831337064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,20 +192,3 @@ MonoBehaviour:
   BoardSizeY: 1
   TilePrefab: {fileID: 4165699661779466, guid: 35ed85725ef3bb54384e700497f0033f, type: 2}
   Tiles: []
---- !u!114 &114780605567359542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1785583352754808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b0d5ca95115f2f4a9019c233bfbab64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Chips: []
-  ChipObject: {fileID: 1725054789902128, guid: 4042b09c6c99e32499da38ed51d3a0a4, type: 2}
-  ChipsNumberInPack: 5
-  RegularPackCost: 100
-  PremiumPackCost: 250
-  SuperPackCost: 500
