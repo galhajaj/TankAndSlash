@@ -21,10 +21,11 @@ GameObject:
   - component: {fileID: 4214148421800398}
   - component: {fileID: 50458878581761006}
   - component: {fileID: 60409459813401588}
+  - component: {fileID: 114386435913587816}
   - component: {fileID: 114244519022634098}
   - component: {fileID: 114032716976288876}
   - component: {fileID: 114776693787194876}
-  - component: {fileID: 114386435913587816}
+  - component: {fileID: 114150581582958010}
   m_Layer: 8
   m_Name: Spaceship
   m_TagString: Untagged
@@ -153,6 +154,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannon: {fileID: 1888465736013554, guid: aa782241161aa944ea0d97816aae1fda, type: 2}
+--- !u!114 &114150581582958010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1009437945730256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21108e4b0a09de4db1b9a8ac38a4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114244519022634098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,6 +187,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177c71e2dd6ae984cb13f607c2f16d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxLife: 5
+  Life: 3
+  LifeRegenerationRate: 0.05
+  MaxPower: 3
+  Power: 1
+  PowerRegenerationRate: 0.02
+  MaxSpeed: 300
+  Speed: 300
+  AngularVelocity: 300
 --- !u!114 &114776693787194876
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -30,6 +30,23 @@ public class PersistentLoader : MonoBehaviour
             Instantiate(TankObj);
         if (Inventory.Instance == null)
             Instantiate(InventoryObj);
+
+        // hide/show elements by scene name
+        /*if (scene.name == "mainScene" || scene.name == "headquartersScene")
+        {
+            Tank.Instance.transform.localScale = new Vector3(0.0F, 0.0F, 0.0F);
+            Inventory.Instance.transform.localScale = new Vector3(0.0F, 0.0F, 0.0F);
+        }
+        else if (scene.name == "garageScene")
+        {
+            Tank.Instance.transform.localScale = new Vector3(0.0F, 0.0F, 0.0F);
+            Inventory.Instance.transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
+        }
+        else if (scene.name == "battlegroundScene")
+        {
+            Tank.Instance.transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
+            Inventory.Instance.transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
+        }*/
     }
 
 	void Start ()
