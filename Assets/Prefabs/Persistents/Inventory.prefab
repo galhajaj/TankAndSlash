@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Chips: []
-  ChipObject: {fileID: 1725054789902128, guid: 4042b09c6c99e32499da38ed51d3a0a4, type: 2}
+  ChipObject: {fileID: 1760154053540892, guid: 44e931100101b2b4b9ccf95b0d99386f, type: 2}
   ChipsNumberInPack: 5
   RegularPackCost: 100
   PremiumPackCost: 250

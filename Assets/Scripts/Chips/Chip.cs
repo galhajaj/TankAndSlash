@@ -39,7 +39,17 @@ public abstract class Chip : MonoBehaviour
     public string ChipName;
     public string GridName; // in which grid contained - inventory/turrets/skills
     public string SocketName; // the socket name inside grid
-    public bool IsActive;
+
+    private bool _isActive;
+    public bool IsActive
+    {
+        get { return _isActive; }
+        set
+        {
+            _isActive = value;
+            changeFrameVisibility();
+        }
+    }
 
     void Start ()
     {
@@ -60,6 +70,11 @@ public abstract class Chip : MonoBehaviour
         data.GridName = this.GridName;
         data.SocketName = this.SocketName;
         return data;
+    }
+
+    private void changeFrameVisibility()
+    {
+            this.transform.Find("Frame").GetComponent<SpriteRenderer>().enabled = _isActive;
     }
 
     private void changeColor()
