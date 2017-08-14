@@ -60,13 +60,13 @@ public class InventoryInput : MonoBehaviour
         {
             if (Input.GetKeyDown((KeyCode)i))
             {
-
+                Inventory.Instance.ActivateChipAndDeactivateAllOthers(_turretsTiles[j].transform);
             }
         }
     }
 
     private void updateTurretsScroller()
     {
-
+        // implement
     }
 }
