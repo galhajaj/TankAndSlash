@@ -13,13 +13,13 @@ public class Fix : Chip
         base.Uninstall();
     }
 
-    public override void Activate()
+    protected override void activate()
     {
-        base.Activate();
+        base.activate();
     }
 
-    public override void Deactivate()
+    protected override void deactivate()
     {
-        base.Deactivate();
+        base.deactivate();
     }
 }

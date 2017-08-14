@@ -14,15 +14,15 @@ public class Sting : Chip
         base.Uninstall();
     }
 
-    public override void Activate()
+    protected override void activate()
     {
         Tank.Instance.PutOnTurret("Cannon1");
-        base.Activate();
+        base.activate();
     }
 
-    public override void Deactivate()
+    protected override void deactivate()
     {
         Tank.Instance.PutOffTurret();
-        base.Deactivate();
+        base.deactivate();
     }
 }

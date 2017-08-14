@@ -108,7 +108,7 @@ public class Inventory : MonoBehaviour
             if (chipScript.GridName == "Grid_Turrets")
             {
                 deactivateActiveTurret();
-                chipScript.Activate();
+                chipScript.IsActive = true;
             }
         }
     }
@@ -122,7 +122,7 @@ public class Inventory : MonoBehaviour
             chipScript.Uninstall();
             if (chipScript.GridName == "Grid_Turrets" && chipScript.IsActive)
             {
-                chipScript.Deactivate();
+                chipScript.IsActive = false;
                 activateNextTurret(chipScript.ChipID);
             }
         }
@@ -220,7 +220,7 @@ public class Inventory : MonoBehaviour
             {
                 Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
                 if (chipScript.IsActive)
-                    chipScript.Deactivate();
+                    chipScript.IsActive = false;
             }
         }
     }
@@ -234,7 +234,7 @@ public class Inventory : MonoBehaviour
                 Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
                 if (chipScript.ChipID != removedChipId)
                 {
-                    chipScript.Activate();
+                    chipScript.IsActive = true;
                     return;
                 }
             }

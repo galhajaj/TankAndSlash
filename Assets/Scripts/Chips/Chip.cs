@@ -22,6 +22,7 @@ public abstract class Chip : MonoBehaviour
         CONST,
         STATE,
         CONSUMABLE,
+        SKILL,
         NONE
     }
 
@@ -49,6 +50,10 @@ public abstract class Chip : MonoBehaviour
         {
             _isActive = value;
             changeFrameVisibility();
+            if (_isActive)
+                this.activate();
+            else
+                this.deactivate();
         }
     }
 
@@ -107,18 +112,19 @@ public abstract class Chip : MonoBehaviour
     {
         Debug.Log("Uninstall chip...");
     }
-    public virtual void Activate()
+    protected virtual void activate()
     {
         Debug.Log("Activate chip...");
+        // destroy consumable after activation
         if (Type == ChipType.CONSUMABLE)
         {
-            // destroy it
+            this.transform.SetParent(null);
+            DestroyImmediate(this.gameObject);
+            DataManager.Instance.SaveDataToFile();
         }
-        IsActive = true;
     }
-    public virtual void Deactivate()
+    protected virtual void deactivate()
     {
         Debug.Log("Deactivate chip...");
-        IsActive = false;
     }
 }
