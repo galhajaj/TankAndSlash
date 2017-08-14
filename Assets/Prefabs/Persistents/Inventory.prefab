@@ -52,6 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4254203310660814}
   - component: {fileID: 114690772442737504}
+  - component: {fileID: 114541010377580490}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -145,6 +146,17 @@ MonoBehaviour:
   BoardSizeY: 1
   TilePrefab: {fileID: 4393528565020578, guid: cf509fe6089dde043bcb6a324fbfec0a, type: 2}
   Tiles: []
+--- !u!114 &114541010377580490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785583352754808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5695055611ae5f24caa8729103882e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114676171461360386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec218a6c03dd604492ea4a820295154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chips: []
   ChipObject: {fileID: 1760154053540892, guid: 44e931100101b2b4b9ccf95b0d99386f, type: 2}
   ChipsNumberInPack: 5
   RegularPackCost: 100
