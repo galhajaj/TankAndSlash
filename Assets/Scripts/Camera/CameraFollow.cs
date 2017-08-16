@@ -14,6 +14,10 @@ public class CameraFollow : MonoBehaviour
 	void Start ()
 	{
 		targetPos = transform.position;
+        if (target == null)
+        {
+            target = GameObject.Find("Spaceship(Clone)");
+        }
 	}
 	// ================================================================================================ //
 	void LateUpdate () 

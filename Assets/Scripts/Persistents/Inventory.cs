@@ -259,4 +259,40 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    public void ActivateNextTurret()
+    {
+        Chip firstTurret = null;
+        Chip activatedTurret = null;
+
+        foreach (Transform tile in _turretsGrid.transform)
+        {
+            if (tile.childCount > 0)
+            {
+                Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
+
+                if (activatedTurret != null)
+                {
+                    activatedTurret.IsActive = false;
+                    chipScript.IsActive = true;
+                    return;
+                }
+
+                if (chipScript.IsActive == true)
+                {
+                    activatedTurret = chipScript;
+                }
+
+                if (firstTurret == null)
+                {
+                    firstTurret = chipScript;
+                }
+            }
+        }
+        if (activatedTurret && firstTurret && firstTurret != activatedTurret)
+        {
+            activatedTurret.IsActive = false;
+            firstTurret.IsActive = true;
+        }
+    }
 }

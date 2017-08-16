@@ -24,7 +24,7 @@ public class EnemiesManager : MonoBehaviour {
 		float posX = Random.Range (0, 10);
 		float posY = Random.Range (0, 10);
 
-        GameObject enemy = (GameObject)Instantiate (EnemyObject, new Vector2 (posX, posY), new Quaternion ());
+        /*GameObject enemy = (GameObject)*/Instantiate (EnemyObject, new Vector2 (posX, posY), new Quaternion ());
 		timeToGenerate = Random.Range (3, 5);
 	}
 }

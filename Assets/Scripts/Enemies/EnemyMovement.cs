@@ -53,11 +53,11 @@ public class EnemyMovement : MonoBehaviour {
     void Rotating()
     {
         float speed = -_angularVel;
-        float step = speed * Time.deltaTime;
+//        float step = speed * Time.deltaTime;
 
-        float angle = Mathf.Atan2 (transform.position.x - _blueTank.position.x, transform.position.y - _blueTank.position.y) * Mathf.Rad2Deg;
+//        float angle = Mathf.Atan2 (transform.position.x - _blueTank.position.x, transform.position.y - _blueTank.position.y) * Mathf.Rad2Deg;
 
-        Quaternion rotateTo = Quaternion.AngleAxis(-angle, Vector3.forward);
+//        Quaternion rotateTo = Quaternion.AngleAxis(-angle, Vector3.forward);
         //transform.rotation = Quaternion.RotateTowards(transform.rotation, rotateTo, step);
 
 
