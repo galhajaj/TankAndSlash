@@ -121,8 +121,9 @@ public class Inventory : MonoBehaviour
             chipScript.Uninstall();
             if (chipScript.GridName == "Grid_Turrets" && chipScript.IsActive)
             {
-                chipScript.IsActive = false;
-                activateNextTurret(chipScript.ChipID);
+                DeactivateActiveChipAndActivateNextOne(Chip.ChipType.TURRET, false);
+                /*chipScript.IsActive = false;
+                activateNextTurret(chipScript.ChipID);*/
             }
         }
     }
@@ -238,61 +239,66 @@ public class Inventory : MonoBehaviour
         chipScript.IsActive = true;
     }
 
-    // for mouse scroller
-    /*public void DeactivateChipAndActivateNextOne(Transform tile)
+    public void DeactivateActiveChipAndActivateNextOne(Chip.ChipType chipType, bool isStayingActiveIfNextOneNotExist, bool isNextForward = true)
     {
+        // get relevant grid
+        Transform grid = null;
+        if (chipType == Chip.ChipType.TURRET)
+            grid = TurretsGrid.transform;
+        if (chipType == Chip.ChipType.SKILL)
+            grid = SkillsGrid.transform;
 
-    }*/
+        if (grid == null)
+            return;
 
-    private void activateNextTurret(int removedChipId)
-    {
-        foreach (Transform tile in _turretsGrid.transform)
+        // create list of all sockets with chips in chosen type
+        int activeChipIndex = 0;
+        List<Chip> chips = new List<Chip>();
+        foreach (Transform tile in grid)
         {
             if (tile.childCount > 0)
             {
                 Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
-                if (chipScript.ChipID != removedChipId)
-                {
-                    chipScript.IsActive = true;
-                    return;
-                }
+                if (chipScript.Type == chipType)
+                    chips.Add(chipScript);
+                if (chipScript.IsActive)
+                    activeChipIndex = chips.Count - 1;
             }
         }
-    }
 
-    public void ActivateNextTurret()
-    {
-        Chip firstTurret = null;
-        Chip activatedTurret = null;
+        if (chips.Count == 0)
+            return;
 
-        foreach (Transform tile in _turretsGrid.transform)
+        // get the next socket
+        Chip activeChip = chips[activeChipIndex];
+        Chip nextChip = null;
+        if (isNextForward)
         {
-            if (tile.childCount > 0)
-            {
-                Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
-
-                if (activatedTurret != null)
-                {
-                    activatedTurret.IsActive = false;
-                    chipScript.IsActive = true;
-                    return;
-                }
-
-                if (chipScript.IsActive == true)
-                {
-                    activatedTurret = chipScript;
-                }
-
-                if (firstTurret == null)
-                {
-                    firstTurret = chipScript;
-                }
-            }
+            if (activeChipIndex == chips.Count - 1)
+                nextChip = chips[0];
+            else
+                nextChip = chips[activeChipIndex + 1];
         }
-        if (activatedTurret && firstTurret && firstTurret != activatedTurret)
+        else
         {
-            activatedTurret.IsActive = false;
-            firstTurret.IsActive = true;
+            if (activeChipIndex == 0)
+                nextChip = chips[chips.Count - 1];
+            else
+                nextChip = chips[activeChipIndex - 1];
+        }
+
+        // deactivate current active chip
+        activeChip.IsActive = false;
+
+        // active next chip
+        if (activeChip == nextChip)
+        {
+            if (isStayingActiveIfNextOneNotExist)
+                nextChip.IsActive = true;
+        }
+        else
+        {
+            nextChip.IsActive = true;
         }
     }
 }

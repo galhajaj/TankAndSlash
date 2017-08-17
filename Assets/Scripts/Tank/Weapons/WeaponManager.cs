@@ -13,9 +13,10 @@ public class WeaponManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        // right button
         if (Input.GetMouseButtonDown(1))
         {
-            Inventory.Instance.ActivateNextTurret();
+            // TODO: implement...
         }
 	}
 }

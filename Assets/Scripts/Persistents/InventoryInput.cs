@@ -67,6 +67,13 @@ public class InventoryInput : MonoBehaviour
 
     private void updateTurretsScroller()
     {
-        // implement
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
+        {
+            Inventory.Instance.DeactivateActiveChipAndActivateNextOne(Chip.ChipType.TURRET, true);
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
+        {
+            Inventory.Instance.DeactivateActiveChipAndActivateNextOne(Chip.ChipType.TURRET, true, false);
+        }
     }
 }
