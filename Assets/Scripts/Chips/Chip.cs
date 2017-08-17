@@ -57,6 +57,9 @@ public abstract class Chip : MonoBehaviour
         }
     }
 
+    public int Cost = 0;
+    public float CostPerSecond = 0.0F;
+
     void Start ()
     {
 		
@@ -99,6 +102,9 @@ public abstract class Chip : MonoBehaviour
             case ChipType.CONSUMABLE:
                 this.gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
                 break;
+            case ChipType.SKILL:
+                this.gameObject.GetComponent<SpriteRenderer>().color = Color.cyan;
+                break;
             default:
                 break;
         }
@@ -126,5 +132,18 @@ public abstract class Chip : MonoBehaviour
     protected virtual void deactivate()
     {
         Debug.Log("Deactivate chip...");
+    }
+
+    public virtual void ExecuteStart()
+    {
+        Debug.Log("Execute start chip...");
+    }
+    public virtual void ExecuteContinues()
+    {
+        Debug.Log("Execute continues chip...");
+    }
+    public virtual void ExecuteEnd()
+    {
+        Debug.Log("Execute end chip...");
     }
 }

@@ -105,7 +105,7 @@ public class Inventory : MonoBehaviour
         if (chipScript.GridName != "Grid_Inventory")
         {
             chipScript.Install();
-            if (chipScript.GridName == "Grid_Turrets")
+            if (chipScript.Type == Chip.ChipType.TURRET || chipScript.Type == Chip.ChipType.SKILL)
             {
                 ActivateChipAndDeactivateAllOthers(socket);
             }
@@ -119,11 +119,10 @@ public class Inventory : MonoBehaviour
         if (chipScript.GridName != "Grid_Inventory")
         {
             chipScript.Uninstall();
-            if (chipScript.GridName == "Grid_Turrets" && chipScript.IsActive)
+            if (chipScript.Type == Chip.ChipType.TURRET || chipScript.Type == Chip.ChipType.SKILL)
             {
-                DeactivateActiveChipAndActivateNextOne(Chip.ChipType.TURRET, false);
-                /*chipScript.IsActive = false;
-                activateNextTurret(chipScript.ChipID);*/
+                if (chipScript.IsActive)
+                    DeactivateActiveChipAndActivateNextOne(chipScript.Type, false);
             }
         }
     }
@@ -132,7 +131,7 @@ public class Inventory : MonoBehaviour
     {
         GameObject newChip = Instantiate(ChipObject);
 
-        int randomChipType = UnityEngine.Random.Range(0, 4);
+        int randomChipType = UnityEngine.Random.Range(0, 5);
 
         string resourcesFolder = "";
         Chip.ChipType chipType = Chip.ChipType.NONE;
@@ -155,6 +154,11 @@ public class Inventory : MonoBehaviour
         {
             resourcesFolder = "State";
             chipType = Chip.ChipType.STATE;
+        }
+        else if (randomChipType == 4) // skill chip
+        {
+            resourcesFolder = "Skill";
+            chipType = Chip.ChipType.SKILL;
         }
 
         UnityEngine.Object[] allChips = Resources.LoadAll("ChipScripts/" + resourcesFolder);
@@ -181,10 +185,10 @@ public class Inventory : MonoBehaviour
         Transform socket = grid.transform.Find(chipData.SocketName);
 
         Chip chipScript = newChip.AddComponent(Type.GetType(chipData.ChipName)) as Chip;
-        PutOnChip(newChip, socket);
         chipScript.ChipID = chipData.ChipID;
         chipScript.ChipName = chipData.ChipName;
         chipScript.Type = chipData.ChipType;
+        PutOnChip(newChip, socket);
     }
 
     public void FillChipsListFromDataManager()
@@ -260,9 +264,11 @@ public class Inventory : MonoBehaviour
             {
                 Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
                 if (chipScript.Type == chipType)
+                {
                     chips.Add(chipScript);
-                if (chipScript.IsActive)
-                    activeChipIndex = chips.Count - 1;
+                    if (chipScript.IsActive)
+                        activeChipIndex = chips.Count - 1;
+                }
             }
         }
 
@@ -300,5 +306,20 @@ public class Inventory : MonoBehaviour
         {
             nextChip.IsActive = true;
         }
+    }
+
+    public Chip GetActiveSkill()
+    {
+        foreach (Transform tile in SkillsGrid.transform)
+        {
+            if (tile.childCount > 0)
+            {
+                Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
+                if (chipScript.Type == Chip.ChipType.SKILL && chipScript.IsActive)
+                    return chipScript;
+            }
+        }
+
+        return null;
     }
 }

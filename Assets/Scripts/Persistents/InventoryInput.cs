@@ -14,9 +14,10 @@ public class InventoryInput : MonoBehaviour
 	
 	void Update ()
     {
-        updateSkillsKeys();
-        updateTurretsKeys();
-        updateTurretsScroller();
+        updateSkillsKeysSelection();
+        updateTurretsKeysSelection();
+        updateTurretsScrollerSelection();
+        
     }
 
     private void initTileLists()
@@ -36,7 +37,7 @@ public class InventoryInput : MonoBehaviour
         _skillsTiles.Insert(0, lastSkillTile);
     }
 
-    private void updateSkillsKeys()
+    private void updateSkillsKeysSelection()
     {
         // skills (0 - 9)
         for (int i = 48, j = 0; i <= 57; ++i, ++j)
@@ -48,12 +49,14 @@ public class InventoryInput : MonoBehaviour
                     Chip chipScript = _skillsTiles[j].transform.GetChild(0).GetComponent<Chip>();
                     if (chipScript.Type == Chip.ChipType.STATE || chipScript.Type == Chip.ChipType.CONSUMABLE)
                         chipScript.IsActive = !chipScript.IsActive;
+                    else if (chipScript.Type == Chip.ChipType.SKILL)
+                        Inventory.Instance.ActivateChipAndDeactivateAllOthers(_skillsTiles[j].transform);
                 }
             }
         }
     }
 
-    private void updateTurretsKeys()
+    private void updateTurretsKeysSelection()
     {
         // turrets (F1 - F4)
         for (int i = 282, j = 0; i <= 285; ++i, ++j)
@@ -65,7 +68,7 @@ public class InventoryInput : MonoBehaviour
         }
     }
 
-    private void updateTurretsScroller()
+    private void updateTurretsScrollerSelection()
     {
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
         {
@@ -74,6 +77,27 @@ public class InventoryInput : MonoBehaviour
         else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
         {
             Inventory.Instance.DeactivateActiveChipAndActivateNextOne(Chip.ChipType.TURRET, true, false);
+        }
+    }
+
+    private void updateSkillExecution()
+    {
+        Chip chipScript = Inventory.Instance.GetActiveSkill();
+
+        // execute start
+        if (Input.GetMouseButtonDown(1))
+        {
+            chipScript.ExecuteStart();
+        }
+        // execute continues
+        if (Input.GetMouseButton(1))
+        {
+            chipScript.ExecuteContinues();
+        }
+        // execute end
+        if (Input.GetMouseButtonUp(1))
+        {
+            chipScript.ExecuteEnd();
         }
     }
 }
