@@ -17,7 +17,8 @@ public class InventoryInput : MonoBehaviour
         updateSkillsKeysSelection();
         updateTurretsKeysSelection();
         updateTurretsScrollerSelection();
-        
+        updateSkillExecution();
+
     }
 
     private void initTileLists()
