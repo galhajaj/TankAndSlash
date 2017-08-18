@@ -1,10 +1,10 @@
 Mono path[0] = 'D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data/Managed'
 Mono config path = 'D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data/Mono/etc'
 PlayerConnection initialized from D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55148
-Multi-casting "[IP] 0.0.0.0 [Port] 55148 [Flags] 2 [Guid] 1181460235 [EditorId] 993841283 [Version] 1048832 [Id] WindowsPlayer(Ligal) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55148]
-PlayerConnection already initialized - listening to [0.0.0.0:55148]
+PlayerConnection initialized network socket : 0.0.0.0 55452
+Multi-casting "[IP] 10.100.102.7 [Port] 55452 [Flags] 2 [Guid] 1668004707 [EditorId] 28728621 [Version] 1048832 [Id] WindowsPlayer(Ligal) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55452]
+PlayerConnection already initialized - listening to [0.0.0.0:55452]
 Player data archive not found at `D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data/data.unity3d`, using local filesystem
 Initialize engine version: 2017.1.0f3 (472613c02cf7)
 GfxDevice: creating device client; threaded=1
@@ -27,12 +27,12 @@ Platform assembly: D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Man
 Loading D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
 Platform assembly: D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Managed\System.dll (this message is harmless)
 Platform assembly: D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.318 seconds
+- Completed reload, in  0.263 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 35.563880 ms
+UnloadTime: 1.704270 ms
 save data to file
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
@@ -57,44 +57,20 @@ UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Exte
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 22.449724 ms
+UnloadTime: 7.472788 ms
 System memory in use before: 19.1 MB.
 System memory in use after: 19.1 MB.
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 780.
-Total: 8.715211 ms (FindLiveObjects: 0.143685 ms CreateObjectMapping: 0.091228 ms MarkObjects: 8.444376 ms  DeleteObjects: 0.030219 ms)
+Total: 0.327283 ms (FindLiveObjects: 0.045044 ms CreateObjectMapping: 0.032500 ms MarkObjects: 0.242896 ms  DeleteObjects: 0.005701 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.475530 ms
+UnloadTime: 0.480092 ms
 System memory in use before: 18.9 MB.
 System memory in use after: 19.0 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 817.
-Total: 1.000096 ms (FindLiveObjects: 0.112895 ms CreateObjectMapping: 0.062719 ms MarkObjects: 0.771454 ms  DeleteObjects: 0.048465 ms)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+Total: 0.436188 ms (FindLiveObjects: 0.049035 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.323292 ms  DeleteObjects: 0.031930 ms)
 
 save data to file
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
@@ -322,240 +298,6 @@ ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlas
 ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
  
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Wasp:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:8)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Uninstall chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
-Wasp:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:13)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:33)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:33)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Wasp:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:8)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Wasp:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:8)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Uninstall chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
-Wasp:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:13)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:activateNextTurret(Int32) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:256)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:125)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
 
 Install chip...
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
@@ -570,21 +312,6 @@ ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\
  
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
 
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
 Activate chip...
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
@@ -621,242 +348,6 @@ ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlas
 ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
  
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Wasp:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:8)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Uninstall chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
-Wasp:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:13)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:activateNextTurret(Int32) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:256)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:125)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Wasp:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:8)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Uninstall chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
-Wasp:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:13)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:activateNextTurret(Int32) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:256)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:125)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
 
 Install chip...
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
@@ -912,16 +403,317 @@ ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\
  
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.203748 ms
-System memory in use before: 19.6 MB.
-System memory in use after: 19.6 MB.
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
 
-Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 1198.
-Total: 1.062246 ms (FindLiveObjects: 0.169343 ms CreateObjectMapping: 0.059298 ms MarkObjects: 0.726410 ms  DeleteObjects: 0.103772 ms)
+Install chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
+Dragon:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:7)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
+
+Deactivate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
+Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
+Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
+
+Activate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
+Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
+Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
+
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+
+Uninstall chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
+Dragon:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:12)
+Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
+
+Deactivate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
+Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
+Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
+
+Activate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
+Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
+Inventory:activateNextTurret(Int32) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:256)
+Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:125)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
+
+Install chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
+Dragon:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:7)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
+
+Deactivate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
+Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
+Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
+
+Activate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
+Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
+Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
+
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+
+Uninstall chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
+Dragon:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:12)
+Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
+
+Deactivate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
+Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
+Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
+
+Activate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
+Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
+Inventory:activateNextTurret(Int32) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:256)
+Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:125)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
+
+Install chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
+Wasp:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:8)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
+
+Deactivate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
+Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
+Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
+
+Activate chip...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
+Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
+Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
+Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
+Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
+
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+
+save data to file
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
+ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
+ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.880929 ms
+System memory in use before: 19.5 MB.
+System memory in use after: 19.5 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1168.
+Total: 0.502899 ms (FindLiveObjects: 0.084386 ms CreateObjectMapping: 0.026228 ms MarkObjects: 0.333555 ms  DeleteObjects: 0.056447 ms)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.190537 ms
+UnloadTime: 0.496057 ms
 We're in Israel
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
@@ -931,11 +723,11 @@ LoadLevel:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Man
  
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Managers/LoadLevel.cs Line: 10)
 
-System memory in use before: 27.1 MB.
-System memory in use after: 27.6 MB.
+System memory in use before: 27.0 MB.
+System memory in use after: 27.5 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 11208.
-Total: 13.489334 ms (FindLiveObjects: 1.412337 ms CreateObjectMapping: 4.528375 ms MarkObjects: 7.455682 ms  DeleteObjects: 0.090088 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 11186.
+Total: 3.269986 ms (FindLiveObjects: 0.723559 ms CreateObjectMapping: 0.143685 ms MarkObjects: 2.359407 ms  DeleteObjects: 0.040482 ms)
 
 Remember to remove script BackToMapOnEsc from Manager in battle scene - or not...
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
@@ -946,976 +738,22 @@ BackToMapOnEsc:Start() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Script
  
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Managers/BackToMapOnEsc.cs Line: 9)
 
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Wasp:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:294)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:295)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:276)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateNextTurret() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:277)
-WeaponManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Tank\Weapons\WeaponManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 19.379301 ms
-System memory in use before: 22.1 MB.
-System memory in use after: 21.9 MB.
-
-Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1198.
-Total: 1.341064 ms (FindLiveObjects: 0.291362 ms CreateObjectMapping: 0.087237 ms MarkObjects: 0.790270 ms  DeleteObjects: 0.168203 ms)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.510710 ms
+System memory in use before: 21.0 MB.
+System memory in use after: 21.0 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1168.
+Total: 0.492636 ms (FindLiveObjects: 0.059868 ms CreateObjectMapping: 0.033640 ms MarkObjects: 0.338687 ms  DeleteObjects: 0.059298 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.460135 ms
+System memory in use before: 20.7 MB.
+System memory in use after: 20.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 759.
+Total: 0.397415 ms (FindLiveObjects: 0.048465 ms CreateObjectMapping: 0.031359 ms MarkObjects: 0.266274 ms  DeleteObjects: 0.050175 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2320 -> priority: 1 
-  Thread -> id: 16c4 -> priority: 1 
+  Thread -> id: 2f2c -> priority: 1 
+  Thread -> id: 2d28 -> priority: 1 

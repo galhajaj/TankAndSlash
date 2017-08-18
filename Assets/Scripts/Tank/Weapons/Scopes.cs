@@ -9,10 +9,13 @@ public class Scopes : MonoBehaviour {
 	public Texture2D farScope;
 	private Vector2 hotSpot = Vector2.zero;
 	private Transform m_transform;
+
+    private float _maxDistance = 0;
 	// Use this for initialization
 	void Start () {
 		m_transform = this.GetComponent<Transform> ();
-	}
+        _maxDistance = this.GetComponent<CannonShooting>().MaxDistance;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,7 +25,7 @@ public class Scopes : MonoBehaviour {
 		Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
 		float distance = Mathf.Sqrt (Mathf.Pow (worldPos.x - m_transform.position.x, 2) + Mathf.Pow (worldPos.y - m_transform.position.y, 2));
 
-		if (distance < CannonShooting.directMaxDistance) {
+        if (distance < _maxDistance) {
 			setCurser (closeScope);
 		} else {
 			setCurser (farScope);
