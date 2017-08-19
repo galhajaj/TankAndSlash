@@ -66,3 +66,6 @@ TagManager:
   - name: UISortingLayer
     uniqueID: 3643217125
     locked: 0
+  - name: DraggedChipsSortingLayer
+    uniqueID: 3943554645
+    locked: 0

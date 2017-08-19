@@ -18,7 +18,6 @@ public class InventoryInput : MonoBehaviour
         updateTurretsKeysSelection();
         updateTurretsScrollerSelection();
         updateSkillExecution();
-
     }
 
     private void initTileLists()
@@ -49,9 +48,17 @@ public class InventoryInput : MonoBehaviour
                 {
                     Chip chipScript = _skillsTiles[j].transform.GetChild(0).GetComponent<Chip>();
                     if (chipScript.Type == Chip.ChipType.STATE || chipScript.Type == Chip.ChipType.CONSUMABLE)
-                        chipScript.IsActive = !chipScript.IsActive;
+                    {
+                        if (chipScript.IsActive)
+                            chipScript.Deactivate();
+                        else
+                            chipScript.Activate();
+
+                    }
                     else if (chipScript.Type == Chip.ChipType.SKILL)
+                    {
                         Inventory.Instance.ActivateChipAndDeactivateAllOthers(_skillsTiles[j].transform);
+                    }
                 }
             }
         }
@@ -84,6 +91,8 @@ public class InventoryInput : MonoBehaviour
     private void updateSkillExecution()
     {
         Chip chipScript = Inventory.Instance.GetActiveSkill();
+        if (chipScript == null)
+            return;
 
         // execute start
         if (Input.GetMouseButtonDown(1))

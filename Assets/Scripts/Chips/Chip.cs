@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [Serializable]
 public class ChipData
 {
     public int ChipID;
-    public Chip.ChipType ChipType;
-    public string ChipName;
+    public string PrefabName;
     public string GridName;
     public string SocketName;
     public bool IsActive;
@@ -26,101 +26,139 @@ public abstract class Chip : MonoBehaviour
         NONE
     }
 
-    private ChipType _type;
-    public ChipType Type
-    {
-        get { return _type; }
-        set
-        {
-            _type = value;
-            changeColor();
-        }
-    }
+    public ChipType Type;
 
     public int ChipID;
-    public string ChipName;
     public string GridName; // in which grid contained - inventory/turrets/skills
     public string SocketName; // the socket name inside grid
 
+    private bool _isInstalled;
+    public bool IsInstalled { get { return _isInstalled; } }
+
     private bool _isActive;
-    public bool IsActive
-    {
-        get { return _isActive; }
-        set
-        {
-            _isActive = value;
-            changeFrameVisibility();
-            if (_isActive)
-                this.activate();
-            else
-                this.deactivate();
-        }
-    }
+    public bool IsActive { get { return _isActive; } }
 
     public int Cost = 0;
     public float CostPerSecond = 0.0F;
 
+    public Sprite IconPic;
+    private GameObject _iconObject;
+    private SpriteRenderer _iconSpriteRenderer;
+
+    public GameObject TurretObject;
+
     void Start ()
     {
-		
-	}
+        addIconChildObject();
+        changeColorByType();
+    }
 	
 	void Update ()
     {
-		
-	}
+        updateIconColor();
+    }
+
+    private void addIconChildObject()
+    {
+        _iconObject = new GameObject();
+        _iconObject.name = "Icon";
+        _iconSpriteRenderer = _iconObject.AddComponent<SpriteRenderer>();
+        _iconSpriteRenderer.sprite = IconPic;
+        _iconSpriteRenderer.sortingLayerName = "ChipsSortingLayer";
+        _iconSpriteRenderer.sortingOrder = 1; // the chip body is 0, need to be in front of it
+        _iconSpriteRenderer.color = Color.black;
+        _iconObject.transform.position = this.transform.position;
+        _iconObject.transform.parent = this.transform;
+    }
+
+    private void updateIconColor()
+    {
+        if (_iconObject == null)
+            return;
+
+        if (Type == ChipType.CONST)
+        {
+            if (IsInstalled)
+                _iconSpriteRenderer.color = Color.white;
+            else
+                _iconSpriteRenderer.color = Color.black;
+
+        }
+        else
+        {
+            if (IsActive)
+                _iconSpriteRenderer.color = Color.white;
+            else
+                _iconSpriteRenderer.color = Color.black;
+        }
+    }
 
     public ChipData GetChipData()
     {
         ChipData data = new ChipData();
         data.ChipID = this.ChipID;
-        data.ChipType = this.Type;
-        data.ChipName = this.ChipName;
+        data.PrefabName = this.name.Replace("(Clone)", "");
         data.GridName = this.GridName;
         data.SocketName = this.SocketName;
         return data;
     }
 
-    private void changeFrameVisibility()
+    private void changeColorByType()
     {
-            this.transform.Find("Frame").GetComponent<SpriteRenderer>().enabled = _isActive;
-    }
-
-    private void changeColor()
-    {
-        switch (_type)
+        string type = this.gameObject.name.Split('_')[1];
+        switch (type)
         {
-            case ChipType.TURRET:
+            case "Turret":
+                Type = ChipType.TURRET;
                 this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
                 break;
-            case ChipType.CONST:
+            case "Const":
+                Type = ChipType.CONST;
                 this.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
                 break;
-            case ChipType.STATE:
+            case "State":
+                Type = ChipType.STATE;
                 this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
                 break;
-            case ChipType.CONSUMABLE:
+            case "Consumable":
+                Type = ChipType.CONSUMABLE;
                 this.gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
                 break;
-            case ChipType.SKILL:
+            case "Skill":
+                Type = ChipType.SKILL;
                 this.gameObject.GetComponent<SpriteRenderer>().color = Color.cyan;
                 break;
             default:
+                Type = ChipType.NONE;
                 break;
         }
     }
 
-    public virtual void Install()
+    // =====================================================================================================
+    // every function below contains protected virtual function to ovveride (if needded) in inherited, and 
+    // it called while the public called
+    // =====================================================================================================
+    public void Install()
     {
-        Debug.Log("Install chip...");
+        _isInstalled = true;
+        install();
     }
-    public virtual void Uninstall()
+    protected virtual void install() { }
+
+    public void Uninstall()
     {
-        Debug.Log("Uninstall chip...");
+        _isInstalled = false;
+        uninstall();
     }
-    protected virtual void activate()
+    protected virtual void uninstall() { }
+
+    public void Activate()
     {
-        Debug.Log("Activate chip...");
+        _isActive = true;
+        if (TurretObject != null)
+            Tank.Instance.PutOnTurret(TurretObject);
+        activate();
+
         // destroy consumable after activation
         if (Type == ChipType.CONSUMABLE)
         {
@@ -129,21 +167,40 @@ public abstract class Chip : MonoBehaviour
             DataManager.Instance.SaveDataToFile();
         }
     }
-    protected virtual void deactivate()
-    {
-        Debug.Log("Deactivate chip...");
-    }
+    protected virtual void activate() { }
 
-    public virtual void ExecuteStart()
+    public void Deactivate()
     {
-        Debug.Log("Execute start chip...");
+        _isActive = false;
+        if (TurretObject != null)
+            Tank.Instance.PutOffTurret();
+        deactivate();
     }
-    public virtual void ExecuteContinues()
+    protected virtual void deactivate() { }
+
+    public void ExecuteStart()
     {
-        Debug.Log("Execute continues chip...");
+        if (Tank.Instance.Power < Cost)
+            return;
+        Tank.Instance.Power -= Cost;
+        executeStart();
     }
-    public virtual void ExecuteEnd()
+    protected virtual void executeStart() { }
+
+    public void ExecuteContinues()
     {
-        Debug.Log("Execute end chip...");
+        float calculatedCost = Time.deltaTime * CostPerSecond;
+        if (Tank.Instance.Power < calculatedCost)
+            return;
+        Tank.Instance.Power -= calculatedCost;
+        executeContinues();
     }
+    protected virtual void executeContinues() { }
+
+    public void ExecuteEnd()
+    {
+        executeEnd();
+    }
+    protected virtual void executeEnd() { }
+    // =====================================================================================================
 }

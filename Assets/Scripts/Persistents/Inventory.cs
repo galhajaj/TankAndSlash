@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -129,65 +130,36 @@ public class Inventory : MonoBehaviour
 
     private void createRandomChip(Transform socket)
     {
-        GameObject newChip = Instantiate(ChipObject);
-
-        int randomChipType = UnityEngine.Random.Range(0, 5);
-
-        string resourcesFolder = "";
-        Chip.ChipType chipType = Chip.ChipType.NONE;
-        if (randomChipType == 0) // const chip
-        {
-            resourcesFolder = "Const";
-            chipType = Chip.ChipType.CONST;
-        }
-        else if (randomChipType == 1) // turret chip
-        {
-            resourcesFolder = "Turret";
-            chipType = Chip.ChipType.TURRET;
-        }
-        else if (randomChipType == 2) // consumable chip
-        {
-            resourcesFolder = "Consumable";
-            chipType = Chip.ChipType.CONSUMABLE;
-        }
-        else if (randomChipType == 3) // state chip
-        {
-            resourcesFolder = "State";
-            chipType = Chip.ChipType.STATE;
-        }
-        else if (randomChipType == 4) // skill chip
-        {
-            resourcesFolder = "Skill";
-            chipType = Chip.ChipType.SKILL;
-        }
-
-        UnityEngine.Object[] allChips = Resources.LoadAll("ChipScripts/" + resourcesFolder);
-        int randomChipNumber = UnityEngine.Random.Range(0, allChips.Length);
-        string chipName = allChips[randomChipNumber].name;
-
-        Chip chipScript = newChip.AddComponent(Type.GetType(chipName)) as Chip;
-
-        PutOnChip(newChip, socket);
-
-        chipScript.Type = chipType;
-
-        chipScript.ChipName = chipName;
+        UnityEngine.Object[] allChips = Resources.LoadAll("Chips");
+        int randomChipIndex = UnityEngine.Random.Range(0, allChips.Length);
+        GameObject newChip = Instantiate(allChips[randomChipIndex] as GameObject);
+        Chip chipScript = newChip.GetComponent<Chip>();
         chipScript.ChipID = DataManager.Instance.GetNextChipID();
+        PutOnChip(newChip, socket);
     }
 
     private void createChipByData(ChipData chipData)
     {
+        // get chip object to create from resources
+        GameObject chipObjectToCreate = null;
+        UnityEngine.Object[] allChips = Resources.LoadAll("Chips");
+        foreach(GameObject chipObj in allChips)
+        {
+            if (chipObj.name == chipData.PrefabName)
+                chipObjectToCreate = chipObj;
+        }
+        if (chipObjectToCreate == null)
+            return;
+
         // create
-        GameObject newChip = Instantiate(ChipObject);
+        GameObject newChip = Instantiate(chipObjectToCreate);
 
         // get chips socket
         GameObject grid = GameObject.Find(chipData.GridName);
         Transform socket = grid.transform.Find(chipData.SocketName);
 
-        Chip chipScript = newChip.AddComponent(Type.GetType(chipData.ChipName)) as Chip;
+        Chip chipScript = newChip.GetComponent<Chip>();
         chipScript.ChipID = chipData.ChipID;
-        chipScript.ChipName = chipData.ChipName;
-        chipScript.Type = chipData.ChipType;
         PutOnChip(newChip, socket);
     }
 
@@ -235,12 +207,12 @@ public class Inventory : MonoBehaviour
             {
                 Chip chipInTileScript = tileItem.GetChild(0).GetComponent<Chip>();
                 if (chipInTileScript.IsActive && chipInTileScript.Type == chipScript.Type)
-                    chipInTileScript.IsActive = false;
+                    chipInTileScript.Deactivate();
             }
         }
 
         // activate chosen
-        chipScript.IsActive = true;
+        chipScript.Activate();
     }
 
     public void DeactivateActiveChipAndActivateNextOne(Chip.ChipType chipType, bool isStayingActiveIfNextOneNotExist, bool isNextForward = true)
@@ -294,17 +266,17 @@ public class Inventory : MonoBehaviour
         }
 
         // deactivate current active chip
-        activeChip.IsActive = false;
+        activeChip.Deactivate();
 
         // active next chip
         if (activeChip == nextChip)
         {
             if (isStayingActiveIfNextOneNotExist)
-                nextChip.IsActive = true;
+                nextChip.Activate();
         }
         else
         {
-            nextChip.IsActive = true;
+            nextChip.Activate();
         }
     }
 

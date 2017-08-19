@@ -6,7 +6,7 @@ public class Tank : MonoBehaviour
 {
     public static Tank Instance;
 
-    private GameObject _currentCannon = null;
+    private GameObject _currentTurret = null;
 
     // need to add default values to save time & trouble
     public int MaxLife = 5;
@@ -45,18 +45,17 @@ public class Tank : MonoBehaviour
 		
 	}
 
-    public void PutOnTurret(string name)
+    public void PutOnTurret(GameObject turretGameObject)
     {
-        GameObject cannon = Resources.Load("Turrets/" + name) as GameObject;
-        _currentCannon = Instantiate(cannon, transform.position, transform.rotation);
-        _currentCannon.transform.parent = this.transform;
+        _currentTurret = Instantiate(turretGameObject, transform.position, transform.rotation);
+        _currentTurret.transform.parent = this.transform;
     }
 
     public void PutOffTurret()
     {
-        if (_currentCannon == null)
+        if (_currentTurret == null)
             return;
-        _currentCannon.transform.parent = null;
-        DestroyImmediate(_currentCannon.gameObject);
+        _currentTurret.transform.parent = null;
+        DestroyImmediate(_currentTurret.gameObject);
     }
 }
