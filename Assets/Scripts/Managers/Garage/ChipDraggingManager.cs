@@ -29,6 +29,7 @@ public class ChipDraggingManager : MonoBehaviour
             if (hit.collider != null)
             {
                 _draggedObject = hit.collider.gameObject;
+                setChipSortingLayer(true);
                 _originSocketObject = _draggedObject.transform.parent.gameObject;
                 Inventory.Instance.PutOffChip(_draggedObject);
 
@@ -97,6 +98,7 @@ public class ChipDraggingManager : MonoBehaviour
                     _draggedObject.transform.position = _originSocketObject.transform.position;
                 }
 
+                setChipSortingLayer(false);
                 _draggedObject = null;
                 _originSocketObject = null;
             }
@@ -111,5 +113,22 @@ public class ChipDraggingManager : MonoBehaviour
         mousePos.z = 5.0F;
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
         _draggedObject.transform.position = worldPos;
+    }
+
+    private void setChipSortingLayer(bool isDragged)
+    {
+        if (_draggedObject == null)
+            return;
+
+        if (isDragged)
+        {
+            _draggedObject.GetComponent<SpriteRenderer>().sortingLayerName = "DraggedChipsSortingLayer";
+            _draggedObject.transform.Find("Icon").GetComponent<SpriteRenderer>().sortingLayerName = "DraggedChipsSortingLayer";
+        }
+        else
+        {
+            _draggedObject.GetComponent<SpriteRenderer>().sortingLayerName = "ChipsSortingLayer";
+            _draggedObject.transform.Find("Icon").GetComponent<SpriteRenderer>().sortingLayerName = "ChipsSortingLayer";
+        }
     }
 }
