@@ -37,6 +37,8 @@ public abstract class Chip : MonoBehaviour
     private bool _isActive;
     public bool IsActive { get { return _isActive; } }
 
+    private bool _isExecuted = false;
+
     public int Cost = 0;
     public float CostPerSecond = 0.0F;
 
@@ -179,6 +181,7 @@ public abstract class Chip : MonoBehaviour
 
     public void ExecuteStart()
     {
+        _isExecuted = true;
         if (Tank.Instance.Power < Cost)
             return;
         Tank.Instance.Power -= Cost;
@@ -188,9 +191,15 @@ public abstract class Chip : MonoBehaviour
 
     public void ExecuteContinues()
     {
+        if (!_isExecuted)
+            return;
+
         float calculatedCost = Time.deltaTime * CostPerSecond;
         if (Tank.Instance.Power < calculatedCost)
+        {
+            ExecuteEnd();
             return;
+        }
         Tank.Instance.Power -= calculatedCost;
         executeContinues();
     }
@@ -198,6 +207,10 @@ public abstract class Chip : MonoBehaviour
 
     public void ExecuteEnd()
     {
+        if (!_isExecuted)
+            return;
+
+        _isExecuted = false;
         executeEnd();
     }
     protected virtual void executeEnd() { }
