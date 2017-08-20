@@ -58,4 +58,14 @@ public class Tank : MonoBehaviour
         _currentTurret.transform.parent = null;
         DestroyImmediate(_currentTurret.gameObject);
     }
+
+    public void SetMovement(bool isOn)
+    {
+        gameObject.GetComponent<SpaceshipMovement>().IsAllowedToMove = isOn;
+    }
+
+    public void SetPosition(float x, float y)
+    {
+        transform.position = new Vector3(x, y);
+    }
 }

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpaceshipMovement : MonoBehaviour {
-
+public class SpaceshipMovement : MonoBehaviour
+{
+    public bool IsAllowedToMove = true;
     private Rigidbody2D _rigidBody;
 
 //    public float Speed = 30f;
@@ -20,7 +21,11 @@ public class SpaceshipMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-    void FixedUpdate()    {
+    void FixedUpdate()
+    {
+        if (!IsAllowedToMove)
+            return;
+
         MoveForward();
         MoveBackward();
         MoveRight();

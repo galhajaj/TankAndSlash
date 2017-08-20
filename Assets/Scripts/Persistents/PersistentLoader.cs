@@ -32,21 +32,31 @@ public class PersistentLoader : MonoBehaviour
             Instantiate(InventoryObj);
 
         // hide/show elements by scene name
-        /*if (scene.name == "mainScene" || scene.name == "headquartersScene")
+        if (scene.name == "mainScene" || scene.name == "headquartersScene")
         {
-            Tank.Instance.transform.localScale = new Vector3(0.0F, 0.0F, 0.0F);
-            Inventory.Instance.transform.localScale = new Vector3(0.0F, 0.0F, 0.0F);
+            Tank.Instance.SetMovement(false);
+            Tank.Instance.SetPosition(5.0F, 0.0F);
+            Inventory.Instance.transform.Find("Grid_Inventory").gameObject.SetActive(true);
+            Inventory.Instance.transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
+            Inventory.Instance.transform.position = new Vector3(100.0F, 100.0F, -10.0F);
         }
         else if (scene.name == "garageScene")
         {
-            Tank.Instance.transform.localScale = new Vector3(0.0F, 0.0F, 0.0F);
+            Tank.Instance.SetMovement(false);
+            Tank.Instance.SetPosition(5.0F, 0.0F);
+            Inventory.Instance.transform.Find("Grid_Inventory").gameObject.SetActive(true);
             Inventory.Instance.transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
+            Inventory.Instance.transform.position = new Vector3(0.0F, -2.0F, -10.0F);
         }
         else if (scene.name == "battlegroundScene")
         {
-            Tank.Instance.transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
-            Inventory.Instance.transform.localScale = new Vector3(1.0F, 1.0F, 1.0F);
-        }*/
+            Tank.Instance.SetMovement(true);
+            Tank.Instance.SetPosition(5.0F, 0.0F);
+            Inventory.Instance.transform.localScale = new Vector3(2.0F, 2.0F, 1.0F);
+            Inventory.Instance.transform.position = new Vector3(0.0F, -13.0F, -10.0F);
+            Inventory.Instance.transform.SetParent(Camera.main.transform);
+            Inventory.Instance.transform.Find("Grid_Inventory").gameObject.SetActive(false);
+        }
     }
 
 	void Start ()
