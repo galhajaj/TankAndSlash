@@ -108,7 +108,6 @@ public class Inventory : MonoBehaviour
             if (chipScript.Type == Chip.ChipType.TURRET || chipScript.Type == Chip.ChipType.SKILL)
             {
                 ActivateChipExclusively(chipScript);
-                Debug.Log("activate " + chipScript.Type.ToString() + " chip");
             }
             /*else if (chipScript.Type == Chip.ChipType.STATE)
             {

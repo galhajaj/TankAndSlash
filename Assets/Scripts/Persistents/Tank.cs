@@ -19,6 +19,13 @@ public class Tank : MonoBehaviour
     public float Speed = 300.0F;
     public float AngularVelocity = 300.0F;
 
+    private Quaternion _lastTurretDir = Quaternion.identity;
+    public Quaternion LastTurretDir
+    {
+        get { return _lastTurretDir; }
+        set { _lastTurretDir = value; }
+    }
+
     void Awake()
     {
         if (Instance == null)
@@ -49,6 +56,9 @@ public class Tank : MonoBehaviour
     {
         _currentTurret = Instantiate(turretGameObject, transform.position, transform.rotation);
         _currentTurret.transform.parent = this.transform;
+
+        // init the dir to be as the last turret
+        _currentTurret.transform.rotation = LastTurretDir;
     }
 
     public void PutOffTurret()

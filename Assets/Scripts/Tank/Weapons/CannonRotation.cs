@@ -18,5 +18,8 @@ public class CannonRotation : MonoBehaviour
 
         Quaternion rotateTo = Quaternion.AngleAxis(-angle, Vector3.forward);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotateTo, step);
-	}
+        
+        // save last directionof turret for the next turret to be at the same dir...
+        Tank.Instance.LastTurretDir = transform.rotation;
+    }
 }
