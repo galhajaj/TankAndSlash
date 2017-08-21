@@ -31,10 +31,10 @@ public abstract class Chip : MonoBehaviour
     public string GridName; // in which grid contained - inventory/turrets/skills
     public string SocketName; // the socket name inside grid
 
-    private bool _isInstalled;
+    private bool _isInstalled = false;
     public bool IsInstalled { get { return _isInstalled; } }
 
-    private bool _isActive;
+    private bool _isActive = false;
     public bool IsActive { get { return _isActive; } }
 
     private bool _isExecuted = false;
@@ -48,13 +48,17 @@ public abstract class Chip : MonoBehaviour
 
     public GameObject TurretObject;
 
-    void Start ()
+    void Awake()
     {
-        addIconChildObject();
         changeColorByType();
     }
+
+    void Start()
+    {
+        addIconChildObject();
+    }
 	
-	void Update ()
+	void Update()
     {
         updateIconColor();
     }
@@ -141,20 +145,29 @@ public abstract class Chip : MonoBehaviour
     // =====================================================================================================
     public void Install()
     {
+        if (_isInstalled)
+            return;
+
         _isInstalled = true;
         install();
     }
     protected virtual void install() { }
-
+    // =====================================================================================================
     public void Uninstall()
     {
+        if (!_isInstalled)
+            return;
+
         _isInstalled = false;
         uninstall();
     }
     protected virtual void uninstall() { }
-
+    // =====================================================================================================
     public void Activate()
     {
+        if (_isActive)
+            return;
+
         _isActive = true;
         if (TurretObject != null)
             Tank.Instance.PutOnTurret(TurretObject);
@@ -169,18 +182,24 @@ public abstract class Chip : MonoBehaviour
         }
     }
     protected virtual void activate() { }
-
+    // =====================================================================================================
     public void Deactivate()
     {
+        if (!_isActive)
+            return;
+
         _isActive = false;
         if (TurretObject != null)
             Tank.Instance.PutOffTurret();
         deactivate();
     }
     protected virtual void deactivate() { }
-
+    // =====================================================================================================
     public void ExecuteStart()
     {
+        if (_isExecuted)
+            return;
+
         _isExecuted = true;
         if (Tank.Instance.Power < Cost)
             return;
@@ -188,7 +207,7 @@ public abstract class Chip : MonoBehaviour
         executeStart();
     }
     protected virtual void executeStart() { }
-
+    // =====================================================================================================
     public void ExecuteContinues()
     {
         if (!_isExecuted)
@@ -204,7 +223,7 @@ public abstract class Chip : MonoBehaviour
         executeContinues();
     }
     protected virtual void executeContinues() { }
-
+    // =====================================================================================================
     public void ExecuteEnd()
     {
         if (!_isExecuted)

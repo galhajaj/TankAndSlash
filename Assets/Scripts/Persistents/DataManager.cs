@@ -52,7 +52,7 @@ public class DataManager : MonoBehaviour
     // in continue game, load from save file of the current player
     public void LoadDataFromSaveFile()
     {
-        Debug.Log("load game - load from save file");
+        //Debug.Log("load game - load from save file");
 
         Saved = Utils.ReadFromBinaryFile<SavedData>(SAVE_FILE_PATH);
     }
@@ -60,7 +60,7 @@ public class DataManager : MonoBehaviour
     // create/update the current player save file
     public void SaveDataToFile()
     {
-        Debug.Log("save data to file");
+        //Debug.Log("save data to file");
 
         // update chips data
         Saved.ChipsData.Clear();

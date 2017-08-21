@@ -58,7 +58,7 @@ public class Inventory : MonoBehaviour
     {
 
     }
-
+    // =====================================================================================================
     private int getCost(PackType packType)
     {
         if (packType == PackType.REGULAR)
@@ -69,7 +69,7 @@ public class Inventory : MonoBehaviour
             return SuperPackCost;
         return 0;
     }
-
+    // =====================================================================================================
     public void BuyPack(PackType packType)
     {
         // check if can afford
@@ -92,7 +92,7 @@ public class Inventory : MonoBehaviour
         // save to file
         DataManager.Instance.SaveDataToFile();
     }
-
+    // =====================================================================================================
     public void PutOnChip(GameObject chip, Transform socket)
     {
         chip.transform.position = socket.position;
@@ -107,11 +107,16 @@ public class Inventory : MonoBehaviour
             chipScript.Install();
             if (chipScript.Type == Chip.ChipType.TURRET || chipScript.Type == Chip.ChipType.SKILL)
             {
-                ActivateChipAndDeactivateAllOthers(socket);
+                ActivateChipExclusively(chipScript);
+                Debug.Log("activate " + chipScript.Type.ToString() + " chip");
             }
+            /*else if (chipScript.Type == Chip.ChipType.STATE)
+            {
+                chipScript.Activate();
+            }*/
         }
     }
-
+    // =====================================================================================================
     public void PutOffChip(GameObject chip)
     {
         Chip chipScript = chip.GetComponent<Chip>();
@@ -122,11 +127,21 @@ public class Inventory : MonoBehaviour
             if (chipScript.Type == Chip.ChipType.TURRET || chipScript.Type == Chip.ChipType.SKILL)
             {
                 if (chipScript.IsActive)
-                    DeactivateActiveChipAndActivateNextOne(chipScript.Type, false);
+                {
+                    chipScript.Deactivate();
+                    Chip nextChip = GetNextChip(chipScript);
+                    if (nextChip != chipScript)
+                        ActivateChipExclusively(nextChip);
+                }
+            }
+            else if (chipScript.Type == Chip.ChipType.STATE)
+            {
+                if (chipScript.IsActive)
+                    chipScript.Deactivate();
             }
         }
     }
-
+    // =====================================================================================================
     private void createRandomChip(Transform socket)
     {
         UnityEngine.Object[] allChips = Resources.LoadAll("Chips");
@@ -136,7 +151,7 @@ public class Inventory : MonoBehaviour
         chipScript.ChipID = DataManager.Instance.GetNextChipID();
         PutOnChip(newChip, socket);
     }
-
+    // =====================================================================================================
     private void createChipByData(ChipData chipData)
     {
         // get chip object to create from resources
@@ -161,7 +176,7 @@ public class Inventory : MonoBehaviour
         chipScript.ChipID = chipData.ChipID;
         PutOnChip(newChip, socket);
     }
-
+    // =====================================================================================================
     public void FillChipsListFromDataManager()
     {
         foreach (ChipData chipData in DataManager.Instance.Saved.ChipsData)
@@ -169,7 +184,7 @@ public class Inventory : MonoBehaviour
             createChipByData(chipData);
         }
     }
-
+    // =====================================================================================================
     private List<Transform> getFreeSocketsForChipsPack()
     {
         List<Transform> freeSockets = new List<Transform>();
@@ -186,111 +201,82 @@ public class Inventory : MonoBehaviour
 
         return null;
     }
-
-    public void ActivateChipAndDeactivateAllOthers(Transform tile)
+    // =====================================================================================================
+    // activate chip and deactivate all Others at the same type
+    public void ActivateChipExclusively(Chip chip)
     {
-        // return if empty tile
-        if (tile.childCount <= 0)
-            return;
-
         // return if already active
-        Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
-        if (chipScript.IsActive)
+        if (chip.IsActive)
             return;
 
-        // deactivate all
-        Transform grid = tile.parent;
+        // deactivate all the rest with the same type
+        Transform grid = chip.transform.parent.parent;
         foreach (Transform tileItem in grid)
         {
             if (tileItem.childCount > 0)
             {
                 Chip chipInTileScript = tileItem.GetChild(0).GetComponent<Chip>();
-                if (chipInTileScript.IsActive && chipInTileScript.Type == chipScript.Type)
+                if (chipInTileScript.IsActive && chipInTileScript.Type == chip.Type)
                     chipInTileScript.Deactivate();
             }
         }
 
         // activate chosen
-        chipScript.Activate();
+        chip.Activate();
     }
-
-    public void DeactivateActiveChipAndActivateNextOne(Chip.ChipType chipType, bool isStayingActiveIfNextOneNotExist, bool isNextForward = true)
+    // =====================================================================================================
+    // return the next/previous chip at the same type in grid
+    public Chip GetNextChip(Chip currentChip, bool isForward = true)
     {
         // get relevant grid
-        Transform grid = null;
-        if (chipType == Chip.ChipType.TURRET)
-            grid = TurretsGrid.transform;
-        if (chipType == Chip.ChipType.SKILL)
-            grid = SkillsGrid.transform;
-
-        if (grid == null)
-            return;
+        Transform grid = currentChip.transform.parent.parent;
 
         // create list of all sockets with chips in chosen type
-        int activeChipIndex = 0;
         List<Chip> chips = new List<Chip>();
         foreach (Transform tile in grid)
         {
             if (tile.childCount > 0)
             {
                 Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
-                if (chipScript.Type == chipType)
-                {
+                if (chipScript.Type == currentChip.Type)
                     chips.Add(chipScript);
-                    if (chipScript.IsActive)
-                        activeChipIndex = chips.Count - 1;
-                }
             }
         }
 
-        if (chips.Count == 0)
-            return;
+        // if only one - return it
+        if (chips.Count == 1)
+            return currentChip;
 
-        // get the next socket
-        Chip activeChip = chips[activeChipIndex];
-        Chip nextChip = null;
-        if (isNextForward)
+        // make the current to be the first. for convenience at the last stage...
+        Chip firstChip = chips[0];
+        while (firstChip != currentChip)
         {
-            if (activeChipIndex == chips.Count - 1)
-                nextChip = chips[0];
-            else
-                nextChip = chips[activeChipIndex + 1];
+            chips.Remove(firstChip);
+            chips.Add(firstChip);
+            firstChip = chips[0];
         }
+
+        // return the next chip
+        if (isForward)
+            return chips[1];
         else
-        {
-            if (activeChipIndex == 0)
-                nextChip = chips[chips.Count - 1];
-            else
-                nextChip = chips[activeChipIndex - 1];
-        }
-
-        // deactivate current active chip
-        activeChip.Deactivate();
-
-        // active next chip
-        if (activeChip == nextChip)
-        {
-            if (isStayingActiveIfNextOneNotExist)
-                nextChip.Activate();
-        }
-        else
-        {
-            nextChip.Activate();
-        }
+            return chips[chips.Count - 1];
     }
-
-    public Chip GetActiveSkill()
+    // =====================================================================================================
+    public Chip GetActiveChip(Chip.ChipType chipType)
     {
-        foreach (Transform tile in SkillsGrid.transform)
+        Transform grid = (chipType == Chip.ChipType.SKILL) ? SkillsGrid.transform : TurretsGrid.transform;
+        foreach (Transform tile in grid)
         {
             if (tile.childCount > 0)
             {
                 Chip chipScript = tile.GetChild(0).GetComponent<Chip>();
-                if (chipScript.Type == Chip.ChipType.SKILL && chipScript.IsActive)
+                if (chipScript.Type == chipType && chipScript.IsActive)
                     return chipScript;
             }
         }
 
         return null;
     }
+    // =====================================================================================================
 }

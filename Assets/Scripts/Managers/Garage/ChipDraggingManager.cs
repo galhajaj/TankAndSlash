@@ -96,6 +96,7 @@ public class ChipDraggingManager : MonoBehaviour
                 else // if leave drag not on socket - back to origin socket
                 {
                     _draggedObject.transform.position = _originSocketObject.transform.position;
+                    Inventory.Instance.PutOnChip(_draggedObject, _originSocketObject.transform);
                 }
 
                 setChipSortingLayer(false);

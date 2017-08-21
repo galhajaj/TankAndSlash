@@ -57,7 +57,7 @@ public class InventoryInput : MonoBehaviour
                     }
                     else if (chipScript.Type == Chip.ChipType.SKILL)
                     {
-                        Inventory.Instance.ActivateChipAndDeactivateAllOthers(_skillsTiles[j].transform);
+                        Inventory.Instance.ActivateChipExclusively(chipScript);
                     }
                 }
             }
@@ -71,26 +71,34 @@ public class InventoryInput : MonoBehaviour
         {
             if (Input.GetKeyDown((KeyCode)i))
             {
-                Inventory.Instance.ActivateChipAndDeactivateAllOthers(_turretsTiles[j].transform);
+                if (_turretsTiles[j].transform.childCount > 0)
+                {
+                    Chip chipScript = _turretsTiles[j].transform.GetChild(0).GetComponent<Chip>();
+                    Inventory.Instance.ActivateChipExclusively(chipScript);
+                }
             }
         }
     }
 
     private void updateTurretsScrollerSelection()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
+        if (Input.GetAxis("Mouse ScrollWheel") != 0f)
         {
-            Inventory.Instance.DeactivateActiveChipAndActivateNextOne(Chip.ChipType.TURRET, true);
-        }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
-        {
-            Inventory.Instance.DeactivateActiveChipAndActivateNextOne(Chip.ChipType.TURRET, true, false);
+            bool isMoveForward = (Input.GetAxis("Mouse ScrollWheel") > 0f);
+
+            Chip activeTurretChip = Inventory.Instance.GetActiveChip(Chip.ChipType.TURRET);
+            if (activeTurretChip != null)
+            {
+                activeTurretChip.Deactivate();
+                Chip nextChip = Inventory.Instance.GetNextChip(activeTurretChip, isMoveForward);
+                Inventory.Instance.ActivateChipExclusively(nextChip);
+            }
         }
     }
 
     private void updateSkillExecution()
     {
-        Chip chipScript = Inventory.Instance.GetActiveSkill();
+        Chip chipScript = Inventory.Instance.GetActiveChip(Chip.ChipType.SKILL);
         if (chipScript == null)
             return;
 
