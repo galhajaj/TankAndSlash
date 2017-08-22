@@ -6,6 +6,8 @@ public class Tank : MonoBehaviour
 {
     public static Tank Instance;
 
+    public bool IsActive = true;
+
     private GameObject _currentTurret = null;
 
     // need to add default values to save time & trouble
@@ -15,9 +17,10 @@ public class Tank : MonoBehaviour
     public int MaxPower = 3;
     public float Power = 1;
     public float PowerRegenerationRate = 0.02F; // 1/sec
-    public float MaxSpeed = 300.0F;
-    public float Speed = 300.0F;
-    public float AngularVelocity = 300.0F;
+    public float Thrust = 100.0F;
+    public float ReverseThrust = 50.0F;
+    public float SidewaysThrust = 75.0F;
+    public float AngularThrust = 75.0F;
 
     private Quaternion _lastTurretDir = Quaternion.identity;
     public Quaternion LastTurretDir
@@ -67,11 +70,6 @@ public class Tank : MonoBehaviour
             return;
         _currentTurret.transform.parent = null;
         DestroyImmediate(_currentTurret.gameObject);
-    }
-
-    public void SetMovement(bool isOn)
-    {
-        gameObject.GetComponent<SpaceshipMovement>().IsAllowedToMove = isOn;
     }
 
     public void SetPosition(float x, float y)

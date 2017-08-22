@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abfca9e621ea5e46a8a15666eaa7052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsAllowedToMove: 1
 --- !u!114 &114386435913587816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,15 +186,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177c71e2dd6ae984cb13f607c2f16d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsActive: 1
   MaxLife: 5
   Life: 3
   LifeRegenerationRate: 0.05
   MaxPower: 3
   Power: 1
   PowerRegenerationRate: 0.02
-  MaxSpeed: 300
-  Speed: 300
-  AngularVelocity: 300
+  Thrust: 300
+  ReverseThrust: 150
+  SidewaysThrust: 300
+  AngularThrust: 300
 --- !u!114 &114776693787194876
 MonoBehaviour:
   m_ObjectHideFlags: 1

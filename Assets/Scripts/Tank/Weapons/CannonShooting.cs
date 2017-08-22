@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannonShooting : MonoBehaviour {
+public class CannonShooting : MonoBehaviour
+{
     public bool ContinuousShooting = false;
     public float LoadingTime = 1.0f;
     public float ShootingForce = 50.0f;
@@ -57,7 +58,10 @@ public class CannonShooting : MonoBehaviour {
 	// Update is called once per frame
     void Update ()
     {
-        if(ShouldShoot())
+        if (!Tank.Instance.IsActive)
+            return;
+
+        if (ShouldShoot())
         {
             Fire();
         }
