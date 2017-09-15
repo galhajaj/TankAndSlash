@@ -438,6 +438,7 @@ MonoBehaviour:
   MaxLife: 1
   Life: 1
   LifeRegenerationRate: 0
+  CreditsWhenDestroyed: 100
 --- !u!212 &212657298933563238
 SpriteRenderer:
   m_ObjectHideFlags: 1
