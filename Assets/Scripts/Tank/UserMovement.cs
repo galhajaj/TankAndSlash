@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpaceshipMovement : MonoBehaviour
+public class UserMovement : MonoBehaviour
 {
+    public float Thrust = 300.0F;
+    public float ReverseThrust = 150.0F;
+    public float SidewaysThrust = 300.0F;
+    public float AngularThrust = 300.0F;
+
     private Rigidbody2D _rigidBody;
 
     void Awake()
@@ -34,7 +39,7 @@ public class SpaceshipMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            _rigidBody.AddForce(_rigidBody.transform.up * Tank.Instance.Thrust);
+            _rigidBody.AddForce(_rigidBody.transform.up * Thrust);
         }
     }
         
@@ -42,7 +47,7 @@ public class SpaceshipMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.S))
         {
-            _rigidBody.AddForce(_rigidBody.transform.up * (-1) * Tank.Instance.ReverseThrust);
+            _rigidBody.AddForce(_rigidBody.transform.up * (-1) * ReverseThrust);
         }
     }
 
@@ -50,7 +55,7 @@ public class SpaceshipMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            _rigidBody.AddForce(_rigidBody.transform.right * Tank.Instance.SidewaysThrust);
+            _rigidBody.AddForce(_rigidBody.transform.right * SidewaysThrust);
         }
     }
 
@@ -58,7 +63,7 @@ public class SpaceshipMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q))
         {
-            _rigidBody.AddForce(_rigidBody.transform.right * (-1) * Tank.Instance.SidewaysThrust);
+            _rigidBody.AddForce(_rigidBody.transform.right * (-1) * SidewaysThrust);
         }
     }
 
@@ -66,7 +71,7 @@ public class SpaceshipMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            _rigidBody.AddTorque(Tank.Instance.AngularThrust);
+            _rigidBody.AddTorque(AngularThrust);
         }
     }
 
@@ -74,7 +79,7 @@ public class SpaceshipMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            _rigidBody.AddTorque(-Tank.Instance.AngularThrust);
+            _rigidBody.AddTorque(-AngularThrust);
         }
     }
 

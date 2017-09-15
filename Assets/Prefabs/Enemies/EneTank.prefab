@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 6115630}
   - component: {fileID: 114491445683314840}
   - component: {fileID: 212657298933563238}
+  - component: {fileID: 114881988124099340}
   m_Layer: 9
   m_Name: EneTank
   m_TagString: Untagged
@@ -423,6 +424,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ammo: {fileID: 141110, guid: d2e74c6c3f775e24abc7f24b26c291b7, type: 2}
+--- !u!114 &114881988124099340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86520aa6bf3ec1c4cb9c45196b1c9d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxLife: 1
+  Life: 1
+  LifeRegenerationRate: 0
 --- !u!212 &212657298933563238
 SpriteRenderer:
   m_ObjectHideFlags: 1
