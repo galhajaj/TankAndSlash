@@ -23,11 +23,10 @@ GameObject:
   - component: {fileID: 60409459813401588}
   - component: {fileID: 114386435913587816}
   - component: {fileID: 114244519022634098}
-  - component: {fileID: 114032716976288876}
-  - component: {fileID: 114776693787194876}
-  - component: {fileID: 114150581582958010}
+  - component: {fileID: 114453263184163350}
+  - component: {fileID: 114528489091851614}
   m_Layer: 8
-  m_Name: Spaceship
+  m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,28 +141,6 @@ PolygonCollider2D:
       - {x: 0.2926948, y: 0.18455723}
       - {x: 0.22754145, y: 0.19770172}
       - {x: 0.09075451, y: 0.3264571}
---- !u!114 &114032716976288876
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009437945730256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e69d2eb42d8e834186c7629465b0f24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114150581582958010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009437945730256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b21108e4b0a09de4db1b9a8ac38a4e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114244519022634098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,6 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abfca9e621ea5e46a8a15666eaa7052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Thrust: 300
+  ReverseThrust: 150
+  SidewaysThrust: 300
+  AngularThrust: 300
 --- !u!114 &114386435913587816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,18 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177c71e2dd6ae984cb13f607c2f16d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LifeData: {fileID: 114453263184163350}
+  PowerData: {fileID: 114528489091851614}
+  MovementData: {fileID: 114244519022634098}
   IsActive: 1
-  MaxLife: 5
-  Life: 3
-  LifeRegenerationRate: 0.05
-  MaxPower: 3
-  Power: 1
-  PowerRegenerationRate: 0.02
-  Thrust: 300
-  ReverseThrust: 150
-  SidewaysThrust: 300
-  AngularThrust: 300
---- !u!114 &114776693787194876
+--- !u!114 &114453263184163350
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -205,9 +179,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1009437945730256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c418a94eee42c6348b8958f8a7eb2852, type: 3}
+  m_Script: {fileID: 11500000, guid: 86520aa6bf3ec1c4cb9c45196b1c9d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxLife: 5
+  Life: 3
+  LifeRegenerationRate: 0.05
+  CreditsWhenDestroyed: 0
+--- !u!114 &114528489091851614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1009437945730256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0166cb0f152a7f4d96016515eb41f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxPower: 3
+  Power: 1
+  PowerRegenerationRate: 0.02
 --- !u!212 &212766862754139368
 SpriteRenderer:
   m_ObjectHideFlags: 1

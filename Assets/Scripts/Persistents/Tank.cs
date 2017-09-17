@@ -6,21 +6,13 @@ public class Tank : MonoBehaviour
 {
     public static Tank Instance;
 
+    public Damagable LifeData;
+    public PowerUser PowerData;
+    public UserMovement MovementData;
+
     public bool IsActive = true;
 
     private GameObject _currentTurret = null;
-
-    // need to add default values to save time & trouble
-    public int MaxLife = 5;
-    public float Life = 3;
-    public float LifeRegenerationRate = 0.05F; // 1/sec
-    public int MaxPower = 3;
-    public float Power = 1;
-    public float PowerRegenerationRate = 0.02F; // 1/sec
-    public float Thrust = 100.0F;
-    public float ReverseThrust = 50.0F;
-    public float SidewaysThrust = 75.0F;
-    public float AngularThrust = 75.0F;
 
     private Quaternion _lastTurretDir = Quaternion.identity;
     public Quaternion LastTurretDir
@@ -47,8 +39,8 @@ public class Tank : MonoBehaviour
 
     void Start ()
     {
-		
-	}
+        
+    }
 	
 	void Update ()
     {

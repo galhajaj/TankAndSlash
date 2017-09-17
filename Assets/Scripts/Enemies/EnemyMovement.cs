@@ -17,7 +17,7 @@ public class EnemyMovement : MonoBehaviour {
     void Start ()
     {
         _blueTank = Tank.Instance.transform;
-        //Do we want enemy parms in the DataManager as well?   _angularVel = Tank.Instance.
+        //Do we want enemy parms in the DataManager as well?   _angularVel = Tank.Instance.Params.
         _angularVel = 30;
         _shootingInterval = 2;
         _timeToNextShot = _shootingInterval;
@@ -76,13 +76,5 @@ public class EnemyMovement : MonoBehaviour {
             _rigidbody.AddTorque(angDiff < 180f ? -speed/20:speed/20);
         }
 
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.GetComponent<ShellBehavior>())
-        {
-            Destroy(this.gameObject);
-        }
     }
 }

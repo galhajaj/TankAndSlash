@@ -5,6 +5,6 @@ public class Chip_Consumable_Fix : Chip
 {
     protected override void activate()
     {
-        Tank.Instance.Life++;
+        Tank.Instance.LifeData.Life++;
     }
 }

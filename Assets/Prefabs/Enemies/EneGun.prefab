@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 60971916357160104}
   - component: {fileID: 114601405445280196}
   - component: {fileID: 50238723770364846}
+  - component: {fileID: 114683347085699316}
   m_Layer: 8
   m_Name: EneGun
   m_TagString: Untagged
@@ -143,6 +144,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShootingForce: 50
   Ammo: {fileID: 141110, guid: d2e74c6c3f775e24abc7f24b26c291b7, type: 2}
+--- !u!114 &114683347085699316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349724071272818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86520aa6bf3ec1c4cb9c45196b1c9d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxLife: 1
+  Life: 1
+  LifeRegenerationRate: 0
+  CreditsWhenDestroyed: 100
 --- !u!212 &212423799631520664
 SpriteRenderer:
   m_ObjectHideFlags: 1

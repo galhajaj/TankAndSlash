@@ -17,11 +17,11 @@ public class Battleground_ButtonCommands_TEST : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Tank.Instance.Life -= damage;
+        Tank.Instance.LifeData.Life -= damage;
     }
 
     public void UsePower(float power)
     {
-        Tank.Instance.Power -= power;
+        Tank.Instance.PowerData.Power -= power;
     }
 }

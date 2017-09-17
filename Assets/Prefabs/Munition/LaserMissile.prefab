@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212958732699350050}
   - component: {fileID: 50440840668126526}
   - component: {fileID: 58098689929982368}
-  - component: {fileID: 114180942660551622}
+  - component: {fileID: 114314001553451802}
   m_Layer: 0
   m_Name: LaserMissile
   m_TagString: Untagged
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.0001
---- !u!114 &114180942660551622
+--- !u!114 &114314001553451802
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,9 +86,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1836988406513320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b871694dad333c4db97cd5128c7369e, type: 3}
+  m_Script: {fileID: 11500000, guid: fe10a5ddf89d47e44b8486b23ad07b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: 2
 --- !u!212 &212958732699350050
 SpriteRenderer:
   m_ObjectHideFlags: 1

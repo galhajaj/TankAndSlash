@@ -201,9 +201,9 @@ public abstract class Chip : MonoBehaviour
             return;
 
         _isExecuted = true;
-        if (Tank.Instance.Power < Cost)
+        if (Tank.Instance.PowerData.Power < Cost)
             return;
-        Tank.Instance.Power -= Cost;
+        Tank.Instance.PowerData.Power -= Cost;
         executeStart();
     }
     protected virtual void executeStart() { }
@@ -214,12 +214,12 @@ public abstract class Chip : MonoBehaviour
             return;
 
         float calculatedCost = Time.deltaTime * CostPerSecond;
-        if (Tank.Instance.Power < calculatedCost)
+        if (Tank.Instance.PowerData.Power < calculatedCost)
         {
             ExecuteEnd();
             return;
         }
-        Tank.Instance.Power -= calculatedCost;
+        Tank.Instance.PowerData.Power -= calculatedCost;
         executeContinues();
     }
     protected virtual void executeContinues() { }
