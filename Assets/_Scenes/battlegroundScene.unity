@@ -219,7 +219,6 @@ GameObject:
   - component: {fileID: 636753931}
   - component: {fileID: 636753930}
   - component: {fileID: 636753933}
-  - component: {fileID: 636753934}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -275,26 +274,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyObject: {fileID: 1349724071272818, guid: 489a7cd54cb503e4f82c2dee92f7aaaf,
     type: 2}
---- !u!114 &636753934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 636753929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dfe9f4bca91d6840b9c634ac048e704, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LEVEL_WIDTH: 50
-  LEVEL_HEIGHT: 50
-  BLOCKS_SIZE: 3
-  Portal: {fileID: 1284279404007078, guid: 4dffe407515b60248838fe96a4d1bbd2, type: 2}
-  Cube: {fileID: 1725482012177602, guid: 125cbcfcd4425fd4db65fe5bbc71d447, type: 2}
-  DestroyedCube: {fileID: 1291426294325130, guid: c417f73fa096b6545b06497908ef3c66,
-    type: 2}
-  NumberOfPortals: 4
-  NumberOfWalls: 40
 --- !u!1 &668739678
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +755,7 @@ Behaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777901642}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1777901646
 Camera:
   m_ObjectHideFlags: 0

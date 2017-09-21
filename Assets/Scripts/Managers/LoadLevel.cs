@@ -19,6 +19,4 @@ public class LoadLevel : MonoBehaviour
     {
 		
 	}
- 
-
 }
