@@ -16,7 +16,9 @@ public class CameraFollow : MonoBehaviour
 		targetPos = transform.position;
         if (target == null)
         {
-            target = GameObject.Find("Spaceship(Clone)");
+            //TASK: asd
+            //TODO: break dependency
+            target = GameObject.Find("Tank(Clone)");
         }
 	}
 	// ================================================================================================ //

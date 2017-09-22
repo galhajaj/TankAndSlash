@@ -29,6 +29,7 @@ public class DamageDealer : MonoBehaviour
         if (otherDamagableScript == null)
             return;
 
+        //TODO: what happens when it hits an object with no life scale (like walls)
         // decrease life & destroy the ammo
         otherDamagableScript.Life -= this.Damage;
         Destroy(this.gameObject);

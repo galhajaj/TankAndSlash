@@ -1,10 +1,13 @@
 Mono path[0] = 'D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data/Managed'
 Mono config path = 'D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data/Mono/etc'
 PlayerConnection initialized from D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55452
-Multi-casting "[IP] 10.100.102.7 [Port] 55452 [Flags] 2 [Guid] 1668004707 [EditorId] 28728621 [Version] 1048832 [Id] WindowsPlayer(Ligal) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55452]
-PlayerConnection already initialized - listening to [0.0.0.0:55452]
+PlayerConnection initialized network socket : 0.0.0.0 55431
+Multi-casting "[IP] 10.0.0.25 [Port] 55431 [Flags] 3 [Guid] 3139110376 [EditorId] 2361777314 [Version] 1048832 [Id] WindowsPlayer(Ligal) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [0.0.0.0:55431]...
+PlayerConnection accepted from [10.0.0.25] handle:0x370
+Started listening to [0.0.0.0:55431]
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56376
+PlayerConnection already initialized - listening to [0.0.0.0:55431]
 Player data archive not found at `D:/githubRepo/TankAndSlash/TankAndSlash/TankAndSlash_Data/data.unity3d`, using local filesystem
 Initialize engine version: 2017.1.0f3 (472613c02cf7)
 GfxDevice: creating device client; threaded=1
@@ -27,693 +30,26 @@ Platform assembly: D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Man
 Loading D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
 Platform assembly: D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Managed\System.dll (this message is harmless)
 Platform assembly: D:\githubRepo\TankAndSlash\TankAndSlash\TankAndSlash_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.263 seconds
+- Completed reload, in  0.332 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.704270 ms
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ButtonCommands:SaveGame() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\ButtonCommands.cs:19)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
+UnloadTime: 2.601735 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.472788 ms
-System memory in use before: 19.1 MB.
-System memory in use after: 19.1 MB.
+UnloadTime: 34.249633 ms
+System memory in use before: 21.6 MB.
+System memory in use after: 21.7 MB.
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 780.
-Total: 0.327283 ms (FindLiveObjects: 0.045044 ms CreateObjectMapping: 0.032500 ms MarkObjects: 0.242896 ms  DeleteObjects: 0.005701 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 772.
+Total: 22.498202 ms (FindLiveObjects: 0.062149 ms CreateObjectMapping: 0.024517 ms MarkObjects: 22.400701 ms  DeleteObjects: 0.009122 ms)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.480092 ms
-System memory in use before: 18.9 MB.
-System memory in use after: 19.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 817.
-Total: 0.436188 ms (FindLiveObjects: 0.049035 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.323292 ms  DeleteObjects: 0.031930 ms)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
  
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-Inventory:BuyPack(PackType) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:93)
-Garage_ButtonCommands:BuyRegularPack() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\Garage_ButtonCommands.cs:20)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:36)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:554)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:453)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:433)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:212)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:285)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Dragon:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:7)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Sting:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:8)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Dragon:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:7)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Uninstall chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
-Dragon:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:12)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:activateNextTurret(Int32) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:256)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:125)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Dragon:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:7)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Dragon:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:19)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Uninstall chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:112)
-Dragon:Uninstall() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:12)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:121)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 112)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Dragon:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Dragon.cs:24)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:124)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Sting:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:activateNextTurret(Int32) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:256)
-Inventory:PutOffChip(GameObject) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:125)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:85)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-Install chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:108)
-Wasp:Install() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:8)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:107)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 108)
-
-Deactivate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:127)
-Sting:deactivate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Sting.cs:25)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:56)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:233)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 127)
-
-Activate chip...
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Chip:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:116)
-Wasp:activate() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Resources\ChipScripts\Turret\Wasp.cs:20)
-Chip:set_IsActive(Boolean) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Chips\Chip.cs:54)
-Inventory:ActivateChipAndDeactivateAllOthers(Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:238)
-Inventory:PutOnChip(GameObject, Transform) (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\Inventory.cs:110)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:90)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Chips/Chip.cs Line: 116)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updataMouseDown() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:36)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:17)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-save data to file
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-DataManager:SaveDataToFile() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Persistents\DataManager.cs:63)
-ChipDraggingManager:updateMouseUp() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:93)
-ChipDraggingManager:Update() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\Garage\ChipDraggingManager.cs:18)
- 
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Persistents/DataManager.cs Line: 63)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.880929 ms
-System memory in use before: 19.5 MB.
-System memory in use after: 19.5 MB.
-
-Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1168.
-Total: 0.502899 ms (FindLiveObjects: 0.084386 ms CreateObjectMapping: 0.026228 ms MarkObjects: 0.333555 ms  DeleteObjects: 0.056447 ms)
+(Filename: C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp Line: 1758)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.496057 ms
+UnloadTime: 0.542812 ms
 We're in Israel
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
@@ -723,37 +59,176 @@ LoadLevel:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Man
  
 (Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Managers/LoadLevel.cs Line: 10)
 
-System memory in use before: 27.0 MB.
-System memory in use after: 27.5 MB.
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 11186.
-Total: 3.269986 ms (FindLiveObjects: 0.723559 ms CreateObjectMapping: 0.143685 ms MarkObjects: 2.359407 ms  DeleteObjects: 0.040482 ms)
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+The referenced script on this Behaviour (Game Object 'Portal') is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:52)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:155)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:205)
+LevelGenerator:GeneratePortals() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:53)
+LevelGenerator:Awake() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:25)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 1758] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 52)
+
+IndexOutOfRangeException: Array index is out of range.
+  at LevelGenerator.GenerateWalls () [0x000ac] in D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:80 
+  at LevelGenerator.Awake () [0x0000e] in D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\LevelGenerator\LevelGenerator.cs:27 
+ 
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/LevelGenerator/LevelGenerator.cs Line: 80)
+
+System memory in use before: 29.1 MB.
+System memory in use after: 29.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 10845.
+Total: 3.498060 ms (FindLiveObjects: 0.777156 ms CreateObjectMapping: 0.151097 ms MarkObjects: 2.515638 ms  DeleteObjects: 0.051886 ms)
 
 Remember to remove script BackToMapOnEsc from Manager in battle scene - or not...
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:LogWarning(Object)
-BackToMapOnEsc:Start() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\BackToMapOnEsc.cs:9)
+BackToMapOnEsc:Start() (at D:\githubRepo\TankAndSlash\TankAndSlash\Assets\Scripts\Managers\BackToMapOnEsc.cs:10)
  
-(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Managers/BackToMapOnEsc.cs Line: 9)
+(Filename: D:/githubRepo/TankAndSlash/TankAndSlash/Assets/Scripts/Managers/BackToMapOnEsc.cs Line: 10)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 10.510710 ms
-System memory in use before: 21.0 MB.
-System memory in use after: 21.0 MB.
+UnloadTime: 7.089630 ms
+System memory in use before: 27.1 MB.
+System memory in use after: 27.2 MB.
 
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1168.
-Total: 0.492636 ms (FindLiveObjects: 0.059868 ms CreateObjectMapping: 0.033640 ms MarkObjects: 0.338687 ms  DeleteObjects: 0.059298 ms)
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 781.
+Total: 0.439609 ms (FindLiveObjects: 0.059298 ms CreateObjectMapping: 0.027938 ms MarkObjects: 0.266274 ms  DeleteObjects: 0.084386 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.460135 ms
-System memory in use before: 20.7 MB.
-System memory in use after: 20.7 MB.
+UnloadTime: 0.834174 ms
+System memory in use before: 23.5 MB.
+System memory in use after: 23.6 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 759.
-Total: 0.397415 ms (FindLiveObjects: 0.048465 ms CreateObjectMapping: 0.031359 ms MarkObjects: 0.266274 ms  DeleteObjects: 0.050175 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 760.
+Total: 0.391714 ms (FindLiveObjects: 0.057588 ms CreateObjectMapping: 0.030219 ms MarkObjects: 0.267414 ms  DeleteObjects: 0.035351 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2f2c -> priority: 1 
-  Thread -> id: 2d28 -> priority: 1 
+  Thread -> id: f9c -> priority: 1 
+  Thread -> id: 1b48 -> priority: 1 
+Waiting for finish
