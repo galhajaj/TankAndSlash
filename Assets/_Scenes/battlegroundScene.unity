@@ -559,7 +559,7 @@ Prefab:
     - target: {fileID: 224865709483202466, guid: 28cdab3cd890c80459c4ffdbcfe0b4e3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224865709483202466, guid: 28cdab3cd890c80459c4ffdbcfe0b4e3,
         type: 2}
@@ -725,7 +725,7 @@ Prefab:
     - target: {fileID: 224091617123156286, guid: 912706055c763c340b20266fb4f67402,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224091617123156286, guid: 912706055c763c340b20266fb4f67402,
         type: 2}
@@ -999,8 +999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59504e8bfce5ac14fa1b21498694c919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoardSizeX: 50
-  BoardSizeY: 50
+  BoardSizeX: 30
+  BoardSizeY: 30
   TilePrefab: {fileID: 4412403155119430, guid: 15fbac2509633df45af22be2ec922c7a, type: 2}
   Tiles: []
 --- !u!4 &1951651615
@@ -1010,7 +1010,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1951651613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: -30, z: 0}
+  m_LocalPosition: {x: -100, y: -100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
